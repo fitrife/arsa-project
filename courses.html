@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Project</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS only -->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <!-- header start -->
+      <header class="header pages fixed-top">
+        <div class="container-xl">
+          <div
+            class="header-main d-flex justify-content-between align-items-center"
+          >
+            <!-- <div class="header-logo">
+              <a href="/" class="">
+                <img src="/img/logo.png" alt="New Project" />
+              </a>
+            </div> -->
+            <a class="header-brand">New Project</a>
+            <div class="open-header-menu">
+              <span></span>
+            </div>
+            <div class="menu-overlay"></div>
+            <nav class="header-menu">
+              <div class="close-header-menu">
+                <i class="fas fa-times"></i>
+              </div>
+              <ul class="menu">
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-bs-toggle="sub-menu"
+                    >Tentang Kami <i class="fas fa-chevron-down"></i
+                  ></a>
+                  <ul class="sub-menu">
+                    <li class="sub-menu-item">
+                      <a class="nav-link" href="/profil-perusahaan"
+                        >Profil Perusahaan</a
+                      >
+                    </li>
+                    <li class="sub-menu-item">
+                      <a lass="nav-link" href="/alumni">Daftar Alumni</a>
+                    </li>
+                    <li class="sub-menu-item">
+                      <a class="nav-link" href="/hubungi-kami">Hubungi Kami</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-bs-toggle="sub-menu"
+                    >Layanan Kami <i class="fas fa-chevron-down"></i
+                  ></a>
+                  <ul class="sub-menu">
+                    <li class="sub-menu-item">
+                      <a
+                        class="nav-link"
+                        href="/sertifikasi/sertifikasi-kemnaker-ri"
+                        >Sertifikasi Kemnaker RI</a
+                      >
+                    </li>
+                    <li class="sub-menu-item">
+                      <a class="nav-link" href="/sertifikasi/sertifikasi-bnsp"
+                        >Sertifikasi BNSP</a
+                      >
+                    </li>
+                    <li class="sub-menu-item">
+                      <a
+                        class="nav-link"
+                        href="/program-pembinaan/juru-las-welder"
+                        >Sertifikasi Juru Las</a
+                      >
+                    </li>
+                    <li class="sub-menu-item">
+                      <a class="nav-link" href="/pengurusan-sio"
+                        >Pengurusan SIO</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-bs-toggle="sub-menu"
+                    >Informasi <i class="fas fa-chevron-down"></i
+                  ></a>
+                  <ul class="sub-menu">
+                    <li class="sub-menu-item">
+                      <a class="nav-link" href="/unduh-peraturan-k3"
+                        >Unduh Peraturan K3 RI</a
+                      >
+                    </li>
+                    <li class="sub-menu-item">
+                      <a class="nav-link" href="/blog">Artikel</a>
+                    </li>
+                    <li class="sub-menu-item">
+                      <a class="nav-link" href="/info-loker-k3">Info Loker</a>
+                    </li>
+                    <li class="sub-menu-item">
+                      <a class="nav-link" href="/galeri">Galeri</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-bs-toggle="sub-menu"
+                    >Pendaftaran <i class="fas fa-chevron-down"></i
+                  ></a>
+                  <ul class="sub-menu">
+                    <li class="sub-menu-item">
+                      <a class="nav-link" href="/pendaftaran-kemnaker-ri"
+                        >Training Kemnaker RI</a
+                      >
+                    </li>
+                    <li class="sub-menu-item">
+                      <a class="nav-link" href="/pendaftaran-bnsp"
+                        >Training BNSP</a
+                      >
+                    </li>
+                    <li class="sub-menu-item">
+                      <a class="nav-link" href="/permohonan-inhouse-training"
+                        >Permohonan InHouse Training</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a class="nav-link" href="/jadwal">jadwal</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- header end -->
+
+      <div class="content-wrapper">
+        <!-- courses start -->
+        <section class="courses-page">
+          <div class="container-fluid">
+            <nav>
+              <ul
+                class="nav nav-tabs border-0 d-flex justify-content-center align-items-center mb-4"
+                id="coursePageTab"
+                role="tablist"
+              >
+                <div
+                  class="container-text-btn horizontal-scrollable row flex-row flex-nowrap pb-2 pt-2"
+                >
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="course-tab-one"
+                      data-bs-toggle="tab"
+                      data-bs-target="#course-tab-one-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="course-tab-one-pane"
+                      aria-selected="true"
+                    >
+                      Course Category 1
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="course-tab-two"
+                      data-bs-toggle="tab"
+                      data-bs-target="#course-tab-two-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="course-tab-two-pane"
+                      aria-selected="false"
+                    >
+                      Course Category 2
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="course-tab-three"
+                      data-bs-toggle="tab"
+                      data-bs-target="#course-tab-three-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="course-tab-three-pane"
+                      aria-selected="false"
+                    >
+                      Course Category 3
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="course-tab-four"
+                      data-bs-toggle="tab"
+                      data-bs-target="#course-tab-four-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="course-tab-four-pane"
+                      aria-selected="false"
+                    >
+                      Course Category 4
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="course-tab-five"
+                      data-bs-toggle="tab"
+                      data-bs-target="#course-tab-five-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="course-tab-five-pane"
+                      aria-selected="false"
+                    >
+                      Course Category 5
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="course-tab-six"
+                      data-bs-toggle="tab"
+                      data-bs-target="#course-tab-six-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="course-tab-six-pane"
+                      aria-selected="false"
+                    >
+                      Course Category 6
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="course-tab-six"
+                      data-bs-toggle="tab"
+                      data-bs-target="#course-tab-six-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="course-tab-six-pane"
+                      aria-selected="false"
+                    >
+                      Course Category 7
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="course-tab-six"
+                      data-bs-toggle="tab"
+                      data-bs-target="#course-tab-six-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="course-tab-six-pane"
+                      aria-selected="false"
+                    >
+                      Course Category 8
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="course-tab-six"
+                      data-bs-toggle="tab"
+                      data-bs-target="#course-tab-six-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="course-tab-six-pane"
+                      aria-selected="false"
+                    >
+                      Course Category 9
+                    </button>
+                  </li>
+                </div>
+              </ul>
+            </nav>
+            <div class="tab-content" id="coursePageTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="course-tab-one-pane"
+                role="tabpanel"
+                aria-labelledby="course-tab-one"
+              >
+                <div class="courses-page-hero bg-light">
+                  <div class="container-xl">
+                    <div class="row">
+                      <div class="col-10 offset-1 col-xl-6 offset-xl-3">
+                        <div class="course-banner text-center">
+                          <h2 class="course-category fw-bold">
+                            Lorem, ipsum 1.
+                          </h2>
+                          <p class="mb-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Delectus quae, ducimus aspernatur totam qui
+                            dolor voluptates exercitationem incidunt obcaecati!
+                            Expedita!
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="courses-page-list container">
+                  <div
+                    class="row section-padding justify-content-center align-items-center"
+                  >
+                    <div class="col-md-10 col-lg-4 order-lg-0 order-1">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold text-capitalize">
+                            Special title treatment
+                          </h5>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                          <a href="#" class="course-direct fw-bold text-dark">
+                            Direct Link
+                            <i class="fa-solid fa-circle-right ms-2"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-10 col-lg-5 order-lg-1 order-0 mb-2 mb-lg-0 text-center text-lg-start"
+                    >
+                      <div class="course-snippet">
+                        <h5 class="course-title fw-bold">
+                          Special title treatment
+                        </h5>
+                        <p class="course-text">
+                          With supporting text below as a natural lead-in to
+                          additional content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="course-tab-two-pane"
+                role="tabpanel"
+                aria-labelledby="course-tab-two"
+              >
+                <div class="courses-page-hero bg-light">
+                  <div class="container-xl">
+                    <div class="row">
+                      <div class="col-10 offset-1 col-xl-6 offset-xl-3">
+                        <div class="course-banner text-center">
+                          <h2 class="course-category fw-bold">
+                            Lorem, ipsum 2.
+                          </h2>
+                          <p class="mb-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Delectus quae, ducimus aspernatur totam qui
+                            dolor voluptates exercitationem incidunt obcaecati!
+                            Expedita!
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="courses-page-list container">
+                  <div
+                    class="row section-padding justify-content-center align-items-center"
+                  >
+                    <div class="col-md-10 col-lg-4 order-lg-0 order-1">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold text-capitalize">
+                            Special title treatment
+                          </h5>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                          <a href="#" class="course-direct fw-bold text-dark">
+                            Direct Link
+                            <i class="fa-solid fa-circle-right ms-2"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-10 col-lg-5 order-lg-1 order-0 mb-2 mb-lg-0 text-center text-lg-start"
+                    >
+                      <div class="course-snippet">
+                        <h5 class="course-title fw-bold">
+                          Special title treatment
+                        </h5>
+                        <p class="course-text">
+                          With supporting text below as a natural lead-in to
+                          additional content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="course-tab-three-pane"
+                role="tabpanel"
+                aria-labelledby="course-tab-three"
+              >
+                <div class="courses-page-hero bg-light">
+                  <div class="container-xl">
+                    <div class="row">
+                      <div class="col-10 offset-1 col-xl-6 offset-xl-3">
+                        <div class="course-banner text-center">
+                          <h2 class="course-category fw-bold">
+                            Lorem, ipsum 3.
+                          </h2>
+                          <p class="mb-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Delectus quae, ducimus aspernatur totam qui
+                            dolor voluptates exercitationem incidunt obcaecati!
+                            Expedita!
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="courses-page-list container">
+                  <div
+                    class="row section-padding justify-content-center align-items-center"
+                  >
+                    <div class="col-md-10 col-lg-4 order-lg-0 order-1">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold text-capitalize">
+                            Special title treatment
+                          </h5>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                          <a href="#" class="course-direct fw-bold text-dark">
+                            Direct Link
+                            <i class="fa-solid fa-circle-right ms-2"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-10 col-lg-5 order-lg-1 order-0 mb-2 mb-lg-0 text-center text-lg-start"
+                    >
+                      <div class="course-snippet">
+                        <h5 class="course-title fw-bold">
+                          Special title treatment
+                        </h5>
+                        <p class="course-text">
+                          With supporting text below as a natural lead-in to
+                          additional content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="row section-padding justify-content-center align-items-center"
+                  >
+                    <div class="col-md-10 col-lg-4 order-lg-0 order-1">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold text-capitalize">
+                            Special title treatment
+                          </h5>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                          <a href="#" class="course-direct fw-bold text-dark">
+                            Direct Link
+                            <i class="fa-solid fa-circle-right ms-2"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-10 col-lg-5 order-lg-1 order-0 mb-2 mb-lg-0 text-center text-lg-start"
+                    >
+                      <div class="course-snippet">
+                        <h5 class="course-title fw-bold">
+                          Special title treatment
+                        </h5>
+                        <p class="course-text">
+                          With supporting text below as a natural lead-in to
+                          additional content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center section-padding">
+              <div class="col course-apply text-center">
+                <h2 class="title fw-bold">Join us now</h2>
+                <button class="btn btn-2">Join Now</button>
+              </div>
+            </div>
+            <div
+              class="row align-items-center m-auto justify-content-center section-padding bg-light"
+            >
+              <div class="col-md-8 testi-img">
+                <div class="img-box">
+                  <!-- <div class="circle"></div> -->
+                  <div class="img-box-inner">
+                    <img src="img/hero.png" alt="testi img" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8 mt-3 text-center">
+                <div
+                  id="testimonialCarousel"
+                  class="carousel slide"
+                  data-bs-interval="5000"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div
+                      class="carousel-item active testi-item"
+                      data-img="img/hero.png"
+                    >
+                      <p>
+                        Intan Safety sebagai penyelenggara sangat baik dan
+                        ramah. Kalo ada yang kita tidak paham langsung
+                        dijelaskan ulang. Recommended buat pelatihan
+                        selanjutnya.
+                      </p>
+                      <h3>Fitriyyah Dwi Rahma</h3>
+                    </div>
+                    <div
+                      class="carousel-item testi-item"
+                      data-img="img/hero.png"
+                    >
+                      <p>
+                        Luar biasa, panitianya asik dan pematerinya bagus
+                        menyampaikan materi. Cepat untuk dipahami.
+                      </p>
+                      <h3>Muhlis Salim</h3>
+                    </div>
+                    <div
+                      class="carousel-item testi-item"
+                      data-img="img/hero.png"
+                    >
+                      <p>
+                        Alhamdulillah pak, pelatihannya sangat luar biasa.
+                        Berjalan dengan baik dan lancar, penyampaian dari
+                        pemateri mudah dipahami, panitianya juga sangat ramah,
+                        asik dan loyal. Bisa direkomendasi untuk pelatihan tahun
+                        selanjutnya
+                      </p>
+                      <h3>La Ode Artamil</h3>
+                    </div>
+
+                    <div
+                      class="carousel-item testi-item"
+                      data-img="img/hero.png"
+                    >
+                      <p>
+                        Saya punya kesan baik dengan Intan Safety. Panitianya
+                        ramah dan tidak ada rasa kaku saat mengikuti
+                        pelatihannya. Apabila kami sebagai peserta ada kendala,
+                        panitia langsung cepat membantu
+                      </p>
+                      <h3>Ahmad Alfian</h3>
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev"
+                  >
+                    <i class="fas fa-arrow-left"></i>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next"
+                  >
+                    <i class="fas fa-arrow-right"></i>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- course end -->
+      </div>
+
+      <footer class="footer position-relative">
+        <div class="footer-top">
+          <div class="container border-top border-bottom">
+            <div class="row">
+              <div class="col-md-4 order-md-0">
+                <div class="py-lg-5">
+                  <div class="footer-item">
+                    <div class="footer-brand">
+                      <h2>New Project</h2>
+                    </div>
+                    <div class="footer-address">
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Magni labore qui dicta 55511
+                      </p>
+                    </div>
+                    <div class="footer-social-media">
+                      <ul
+                        class="sosmed-items d-flex me-5 ms-3 justify-content-between"
+                      >
+                        <li>
+                          <a href="https://www.facebook.com/intansafety"
+                            ><i class="fab fa-facebook icon fs-5"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com/intansafety_yk?lang=en"
+                            ><i class="fab fa-twitter icon fs-5"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://www.instagram.com/intansafetyjogja/"
+                            ><i class="fab fa-instagram icon fs-5"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://id.linkedin.com/company/intansafetyjogja"
+                            ><i class="fab fa-linkedin-in icon fs-5"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8 order-md-1">
+                <div class="row justify-content-end py-lg-5">
+                  <div class="col-md-5 mt-3 mt-md-0">
+                    <div class="footer-item text-start">
+                      <h3 class="fs-3 fw-bolder">Lorem ipsum dolorsit amet.</h3>
+                      <p>Tentang Kami</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 col-sm-6 mt-3 mt-md-0">
+                    <div class="footer-item ms-md-5 text-start">
+                      <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Program</a></li>
+                        <li><a href="#">Register</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 col-sm-6 mt-3 mt-md-0">
+                    <div class="footer-item text-start">
+                      <ul>
+                        <li><a href="#">Hubungi Kami</a></li>
+                        <li><a href="#">FAQ</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <p class="m-0 py-4 text-center">Copyright &copy;2023 New Project</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
