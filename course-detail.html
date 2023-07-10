@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New Project</title>
+    <title>Arsa Consultant</title>
 
     <!-- Font Awesome -->
     <link
@@ -15,6 +15,7 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- CSS only -->
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -45,661 +46,480 @@
     <!-- Custom Style -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="main-wrapper">
       <!-- header start -->
-      <header class="header pages fixed-top">
-        <div class="container">
-          <div
-            class="header-main d-flex justify-content-between align-items-center"
-          >
-            <!-- <div class="header-logo">
-              <a href="/" class="">
-                <img src="/img/logo.png" alt="New Project" />
-              </a>
-            </div> -->
-            <a class="header-brand">New Project</a>
-            <div class="open-header-menu">
-              <span></span>
-            </div>
-            <div class="menu-overlay"></div>
-            <nav class="header-menu">
-              <div class="close-header-menu">
-                <i class="fas fa-times"></i>
+      <header id="header" class="header fixed-top">
+        <div class="top-header py-2 bg-white">
+          <div class="container">
+            <div class="row no-gutters">
+              <div class="col-lg-8 text-lg-start text-center m-auto">
+                <a href="callto:02744297535" class="text-muted"
+                  ><strong><i class="fa-solid fa-location-dot"></i></strong> Jl.
+                  Ringroad Selatan, Gamping, Sleman, Daerah Istimewa Yogyakarta,
+                  55294</a
+                >
               </div>
-              <ul class="menu">
-                <li class="menu-item menu-item-has-children">
-                  <a href="#" data-bs-toggle="sub-menu"
-                    >Tentang Kami <i class="fas fa-chevron-down"></i
-                  ></a>
-                  <ul class="sub-menu">
-                    <li class="sub-menu-item">
-                      <a class="nav-link" href="/profil-perusahaan"
-                        >Profil Perusahaan</a
-                      >
-                    </li>
-                    <li class="sub-menu-item">
-                      <a lass="nav-link" href="/alumni">Daftar Alumni</a>
-                    </li>
-                    <li class="sub-menu-item">
-                      <a class="nav-link" href="/hubungi-kami">Hubungi Kami</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu-item menu-item-has-children">
-                  <a href="#" data-bs-toggle="sub-menu"
-                    >Layanan Kami <i class="fas fa-chevron-down"></i
-                  ></a>
-                  <ul class="sub-menu">
-                    <li class="sub-menu-item">
-                      <a
-                        class="nav-link"
-                        href="/sertifikasi/sertifikasi-kemnaker-ri"
+              <div class="col-lg-4 text-lg-end text-center">
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a class="text-muted p-2 py-2 px-0 d-inline-block" href="">
+                      <strong><i class="fa-solid fa-envelope"></i></strong>
+                      cs@domain.com
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      class="text-muted p-2 py-2 px-0 d-inline-block"
+                      href="callto:02744297535"
+                    >
+                      <strong><i class="fa-solid fa-square-phone"></i></strong>
+                      02744297535
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-navigation w-100">
+          <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+              <a href="" class="navbar-brand">
+                <img src="img/company-logo.png" alt="arsa consultant" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse"
+                aria-controls="navbar-collapse"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navigation">
+                <ul class="navbar-nav ms-auto text-center">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Beranda</a>
+                  </li>
+                  <li class="nav-item dropdown view">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Jenis Pelatihan</a
+                    >
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href=""
                         >Sertifikasi Kemnaker RI</a
                       >
-                    </li>
-                    <li class="sub-menu-item">
-                      <a class="nav-link" href="/sertifikasi/sertifikasi-bnsp"
-                        >Sertifikasi BNSP</a
-                      >
-                    </li>
-                    <li class="sub-menu-item">
-                      <a
-                        class="nav-link"
-                        href="/program-pembinaan/juru-las-welder"
-                        >Sertifikasi Juru Las</a
-                      >
-                    </li>
-                    <li class="sub-menu-item">
-                      <a class="nav-link" href="/pengurusan-sio"
-                        >Pengurusan SIO</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu-item menu-item-has-children">
-                  <a href="#" data-bs-toggle="sub-menu"
-                    >Informasi <i class="fas fa-chevron-down"></i
-                  ></a>
-                  <ul class="sub-menu">
-                    <li class="sub-menu-item">
-                      <a class="nav-link" href="/unduh-peraturan-k3"
-                        >Unduh Peraturan K3 RI</a
-                      >
-                    </li>
-                    <li class="sub-menu-item">
-                      <a class="nav-link" href="/blog">Artikel</a>
-                    </li>
-                    <li class="sub-menu-item">
-                      <a class="nav-link" href="/info-loker-k3">Info Loker</a>
-                    </li>
-                    <li class="sub-menu-item">
-                      <a class="nav-link" href="/galeri">Galeri</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu-item menu-item-has-children">
-                  <a href="#" data-bs-toggle="sub-menu"
-                    >Pendaftaran <i class="fas fa-chevron-down"></i
-                  ></a>
-                  <ul class="sub-menu">
-                    <li class="sub-menu-item">
-                      <a class="nav-link" href="/pendaftaran-kemnaker-ri"
-                        >Training Kemnaker RI</a
-                      >
-                    </li>
-                    <li class="sub-menu-item">
-                      <a class="nav-link" href="/pendaftaran-bnsp"
-                        >Training BNSP</a
-                      >
-                    </li>
-                    <li class="sub-menu-item">
-                      <a class="nav-link" href="/permohonan-inhouse-training"
-                        >Permohonan InHouse Training</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu-item">
-                  <a class="nav-link" href="/jadwal">jadwal</a>
-                </li>
-              </ul>
+                      <a class="dropdown-item" href="">Sertifikasi BNSP</a>
+                      <a class="dropdown-item" href="">Softskill</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">Jadwal Pelatihan</a>
+                  </li>
+                  <li class="nav-item dropdown view">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Pendaftaran</a
+                    >
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="">Public Training</a>
+                      <a class="dropdown-item" href="">Inhouse Training</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Artikel</a>
+                  </li>
+                  <li class="nav-item @@contact">
+                    <a class="nav-link" href="contact.html">Kontak</a>
+                  </li>
+                </ul>
+              </div>
             </nav>
           </div>
         </div>
       </header>
       <!-- header end -->
 
-      <div class="content-wrapper">
-        <section class="course-detail d-flex align-items-center bg-light">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-3">
-                <div class="img">
-                  <img
-                    src="img/hero.png"
-                    alt=""
-                    class="box d-none d-lg-block"
-                  />
+      <!-- page title -->
+      <section
+        class="page-title-section overlay-light v-75"
+        data-background="img/abstract-1.jpg"
+        style="background-size: cover"
+      >
+        <div class="container position-relative">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="img/schedule.webp" alt="" />
+            </div>
+            <div class="col-md-7">
+              <h1 class="display-5 fw-bolder course-title text-dark mb-3">
+                Pelatihan & Pembinaan
+              </h1>
+              <div class="course-certificate mb-3">
+                <div class="title text-center">
+                  <h3 class="fw-bold">Sertifikat</h3>
                 </div>
-              </div>
-              <div class="col-lg-6 col-md-9">
-                <div class="course-banner">
-                  <p class="text-muted course-category">Kategori Program</p>
-                  <h1 class="course-title">Lorem Ipsum Dolor Sit</h1>
-                  <div class="course-duration mb-3">
-                    <i class="fa-regular fa-clock me-2"></i>5 Days Training
-                  </div>
-                  <p class="course-outline">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Beatae dolorum esse, maxime fuga obcaecati impedit deserunt
-                    voluptas ab fugit architecto voluptatum commodi assumenda
-                    atque minima iure? Deserunt voluptatem quidem totam!
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-9">
-                <div class="btn-group box d-grid bg-white">
-                  <!-- <a
-                    href="#nav-form"
-                    class="btn btn-theme register w-100 d-block"
-                  >
-                    Daftar Sekarang
-                  </a>
-                  <hr />
-                  <a
-                    class="btn btn-light silabus w-100 d-block tab-link"
-                    href="#forgot-password"
-                    data-bs-toggle="tab"
-                  >
-                    Lihat Silabus
-                  </a> -->
-                  <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
-                    <li class="nav-item w-100" role="presentation">
-                      <!-- <a
-                        href="#nav-form"
-                        class="btn btn-theme w-100 d-block"
-                        id="form-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#nav-form"
-                        type="button"
-                        role="tab"
-                        aria-controls="nav-form"
-                        aria-selected="false"
-                      >
-                        Daftar Sekarang
-                      </a> -->
-                      <a
-                        href="#nav-form"
-                        class="btn btn-theme"
-                        data-bs-toggle="tab"
-                        type="button"
-                        role="tab"
-                        aria-controls="nav-form"
-                      >
-                        Daftar Sekarang
-                      </a>
+                <div class="description">
+                  <ul>
+                    <li>
+                      <i class="fa-regular fa-circle-check me-2"></i>Sertifikat
+                      Calon Ahli K3 Umum KEMNAKER RI
                     </li>
-                    <hr />
-                    <li class="w-100">
-                      <a
-                        class="btn btn-light silabus w-100 d-block tab-link"
-                        href="#forgot-password"
-                        data-bs-toggle="tab"
-                      >
-                        Lihat Silabus
-                      </a>
+                    <li>
+                      <i class="fa-regular fa-circle-check me-2"></i>Surat
+                      Keputusan Penunjukan (SKP) AK3U KEMNAKER RI
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check me-2"></i>Kartu Tanda
+                      Kewenangan (Lisensi) AK3U KEMNAKER RI
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="course-requirement mb-3">
+                <div class="title text-center">
+                  <h3 class="fw-bold">Persyaratan Peserta</h3>
+                </div>
+                <div class="description">
+                  <ul>
+                    <li>
+                      <i class="fa-regular fa-circle-check me-2"></i>
+                      Scan Ijazah Minimal D3
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check me-2"></i>Scan Kartu
+                      Tanda Penduduk (KTP)
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check me-2"></i>
+                      Pas Foto (Background Merah)
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check me-2"></i>
+                      Surat Keterangan Kerja (Jika Utusan Perusahaan)
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check me-2"></i>
+                      Mengisi Pakta Integritas (Format Terlampir pada Proposal
+                      AK3U)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a href="" class="btn btn-secondary w-100 mb-2"
+                >Download Proposal</a
+              >
+              <a href="" class="btn btn-primary w-100">Daftar Sekarang</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /page title -->
+
+      <!-- duration start -->
+      <section class="course-duration bg-primary section-padding">
+        <div class="container">
+          <div class="course-duration d-flex justify-content-center">
+            <div class="card-body">
+              <div class="d-flex flex-column flex-lg-row text-light">
+                <div class="me-3 mb-2 mb-lg-0">
+                  <i class="fa-regular fa-clock fs-2"></i>
+                </div>
+                <div>
+                  <h3 class="fw-bold mb-2 text-light">Durasi</h3>
+                  <span class="text-gray-400"
+                    >12 Hari Pelatihan (Senin – Sabtu)</span
+                  >
+                  <ul>
+                    <li>8 Hari Teori</li>
+                    <li>
+                      1 Hari Praktek Kunjungan Lapangan di Perusahaan (Observasi
+                      online menggunakan video)
+                    </li>
+                    <li>
+                      1 Hari Penyusunan Laporan PKL (Makalah dan Power Point)
+                    </li>
+                    <li>1 Hari Evaluasi Tertulis</li>
+                    <li>
+                      1 Hari Evaluasi Seminar (Presentasi Kelompok Laporan PKL)
+                    </li>
+                    <li>
+                      Bonus Voucher 4 hari pelatihan HSE Officer Development
+                      Program (12 Topik & Sertifikat)
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
+      <!-- duration end -->
 
-        <!-- <div class="course-benefit section-padding">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-md-6">
-                <div class="section-title">
-                  <h5>Apa yang Anda dapatkan</h5>
-                </div>
+      <!-- description start -->
+      <section class="course-description section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="title text-center">
+                <h3 class="fw-bold">Latar Belakang</h3>
+              </div>
+              <div class="description">
+                <p>
+                  Sertifikasi dan penunjukkan sebagai Ahli K3 Umum merupakan
+                  program pemerintah untuk mengurangi kecelakaan dan penyakit
+                  didunia kerja, sehingga dapat meningkatkan kemanan bekerja,
+                  profit dan image positif bagi perusahaan. <br />Keselamatan
+                  dan kesehatan Kerja (K3) telah menjadi isu penting, tidak
+                  hanya dalam skala nasional, tetapi juga dalam skala
+                  internasional. Setiap perusahaan diwajibkan untuk menerapkan
+                  persyaratan K3. K3 tidak lagi hanya milik perusahaan dibidang
+                  minyak dan gas, pertambangan, proyek konstruksi dan
+                  manufaktur, tetapi sudah merambah kesemua jenis perusahaan.
+                  Profesi dibidang K3, menjadi suatu profesi yang menjanjikan
+                  hingga beberapa puluh tahun kedepan. Namun demikian,
+                  pengetahuan dibidang K3, tidaklah wajib hanya bagi karyawan
+                  bidang K3, tetapi wajib bagi seluruh karyawan. <br />
+                  Permenaker no. 2 tahun 1992 telah mengatur mengenai tata cara
+                  penunjukkan Ahli K3 Umum. “Setiap perusahaan yang memiliki
+                  karyawan 100 orang atau lebih, atau memiliki resiko pekerjaan
+                  yang tinggi, wajib memiliki P2K3 dan juga minimal seorang Ahli
+                  K3 Umum. “Ahli K3 adalah tenaga kerja teknik berkeahlian
+                  khusus dari luar Departemen Tenaga Kerja yang ditunjuk oleh
+                  Menteri Tenaga Kerja untuk Mengawasi ditaatinya UU Keselamatan
+                  Kerja”. Ahli K3 umum adalah kepanjangan tangan dari pemerintah
+                  dalam mengawasi pekerjaan ditempat kerjanya, agar sesuai
+                  dengan persyaratan perundang undangan yang telah ditetapkan
+                  pemerintah, sehingga dapat mengurangi resiko dan insiden, baik
+                  itu kecelakaan maupun penyakit akibat kerja. Setelah lulus
+                  dari sertifikasi ini individu akan memiliki wewenang yang
+                  telah diakui secara legal untuk menjadi Ahli K3 di tempat
+                  kerjanya.
+                </p>
               </div>
             </div>
-            <div class="row">
-              <div class="course-detail-carousel owl-carousel">
-                <div class="card border-gray-300 bg-body">
-                  <div class="card-body">
-                    <div class="d-flex flex-column flex-lg-row">
-                      <div class="me-3 mb-2 mb-lg-0 mt-1">
-                        <i class="fa-solid fa-certificate fs-3"></i>
-                      </div>
-                      <div class="benefit-item">
-                        <p class="benefit-title fw-bold">Sertifikat</p>
-                        <span class="benefit-desc text-muted">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit.
-                        </span>
-                      </div>
-                    </div>
-                  </div>
+          </div>
+        </div>
+      </section>
+      <!-- description end -->
+
+      <!-- benefit start -->
+      <section class="benefit-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="box">
+                <div class="title text-center">
+                  <h3 class="fw-bold">Manfaat</h3>
                 </div>
-                <div class="card border-gray-300 bg-body">
-                  <div class="card-body">
-                    <div class="d-flex flex-column flex-lg-row">
-                      <div class="me-3 mb-2 mb-lg-0 mt-1">
-                        <i class="fa-solid fa-certificate fs-3"></i>
-                      </div>
-                      <div class="benefit-item">
-                        <p class="benefit-title fw-bold">Sertifikat</p>
-                        <span class="benefit-desc text-muted">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit.
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card border-gray-300 bg-body">
-                  <div class="card-body">
-                    <div class="d-flex flex-column flex-lg-row">
-                      <div class="me-3 mb-2 mb-lg-0 mt-1">
-                        <i class="fa-solid fa-certificate fs-3"></i>
-                      </div>
-                      <div class="benefit-item">
-                        <p class="benefit-title fw-bold">Sertifikat</p>
-                        <span class="benefit-desc text-muted">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit.
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card border-gray-300 bg-body">
-                  <div class="card-body">
-                    <div class="d-flex flex-column flex-lg-row">
-                      <div class="me-3 mb-2 mb-lg-0 mt-1">
-                        <i class="fa-solid fa-certificate fs-3"></i>
-                      </div>
-                      <div class="benefit-item">
-                        <p class="benefit-title fw-bold">Sertifikat</p>
-                        <span class="benefit-desc text-muted">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit.
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card border-gray-300 bg-body">
-                  <div class="card-body">
-                    <div class="d-flex flex-column flex-lg-row">
-                      <div class="me-3 mb-2 mb-lg-0 mt-1">
-                        <i class="fa-solid fa-certificate fs-3"></i>
-                      </div>
-                      <div class="benefit-item">
-                        <p class="benefit-title fw-bold">Sertifikat</p>
-                        <span class="benefit-desc text-muted">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit.
-                        </span>
-                      </div>
-                    </div>
-                  </div>
+                <div class="description">
+                  Manfaat dari sertifikasi Ahli K3 Umum telah dirasakan oleh
+                  alumni kami dalam mendapatkan pekerjaan pertamanya – seperti
+                  yang kita ketahui bahwa meningkatkan kompetensi diri merupakan
+                  salah satu cara untuk meningkatkan daya jual individu dalam
+                  mendapatkan pekerjaan. Kenapa? <br />
+                  Memiliki tenaga Ahli yang telah tersertifikasi Ahli K3 Umum
+                  merupakan kewajiban dari perusahaan, dimana perusahaan yang
+                  tidak memiliki Ahli K3 wajib untuk men-training perwakilan
+                  karyawannya untuk mendapatkan sertifikasi ini. Selain biaya
+                  investasi yang tidak cukup murah, resiko kehilangan karyawan
+                  (karena resign) juga menjadi pertimbangan perusahaan dalam
+                  mengeluarkan biaya untuk sertifikasi ini – sehingga dalam
+                  proses recruitment, dengan kompetensi yang sama namun memiliki
+                  perbedaan dalam hal sertifikasi, akan lebih menuntungkan jika
+                  perusahaan merekrut individu yang telah tersertifikasi Ahli K3
+                  Umum. <br />
+                  Manfaat lainnya yang dapat diperoleh oleh individu yang telah
+                  memiliki pengalaman kerja sebelumnya adalah dalam menunjang
+                  promosi jabatan di perusahaan sebelumnya atau modal untuk
+                  mencari pengalaman yang lebih luas dengan jabatan yang berbeda
+                  di perusahaan baru. <br />
+                  Jelas bahwa, mengikuti program pembinaan Ahli K3 Umum
+                  merupakan investasi bagi setiap individu baik yang telah
+                  menjadi bagian dari Praktisi K3 (HSE Profesional) maupun bagi
+                  individu yang ingin menjadi bagian dari keluarga K3. Salah
+                  satu slogan yang sering kita dengar adalah “Safety is Everyone
+                  Responsibility” atau “Keselamatan merupakan tanggungjawab
+                  semua orang”. Slogan ini mengingatkan kita bahwa K3 merupakan
+                  kebutuhan semua orang sehingga tercapailah tujuan “Mulailah
+                  pekerjaan dengan semangat dan pulang dengan selamat.
                 </div>
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
+      </section>
+      <!-- benefit end -->
 
-        <div class="course-menu">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8">
-                <div class="course-menu-nav pb-3 pt-3 border-bottom">
-                  <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <a
-                        href="#nav-description"
-                        class="nav-link active"
-                        data-bs-toggle="tab"
-                        type="button"
-                        role="tab"
-                        aria-controls="desc-tab-pane"
-                      >
-                        Deskripsi
-                      </a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <a
-                        href="#nav-outline"
-                        class="nav-link"
-                        data-bs-toggle="tab"
-                        type="button"
-                        role="tab"
-                        aria-controls="outline-tab-pane"
-                      >
-                        Outline Materi
-                      </a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <a
-                        href="#nav-form"
-                        class="nav-link"
-                        data-bs-toggle="tab"
-                        type="button"
-                        role="tab"
-                        aria-controls="nav-form"
-                      >
-                        Form Pre-Registrasi
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="tab-content section-padding" id="nav-tabContent">
-                  <div
-                    role="tabpanel"
-                    class="tab-pane active"
-                    id="nav-description"
-                  >
-                    <h5 class="fw-bold">Deskripsi</h5>
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Consequuntur sint iste ab doloribus. Nam consectetur
-                      praesentium, porro omnis aliquam, eveniet beatae, non vero
-                      aliquid distinctio ad commodi nulla ullam pariatur quis
-                      est. Magnam expedita fugiat illo! In voluptatibus sit
-                      nobis atque, ipsum eveniet voluptas, assumenda modi magni
-                      quos quidem nulla quasi harum hic? Vel, dolorem alias.
-                      Deleniti aut, et quis ipsum quidem deserunt maxime optio
-                      voluptates, blanditiis nulla similique libero vel ipsam
-                      labore voluptatum officiis, error placeat provident
-                      explicabo laborum tempora expedita? Tempora nemo sequi
-                      quas cum dolorum alias ratione, inventore adipisci quod
-                      quia nihil est praesentium accusamus labore magnam,
-                      quisquam libero iure dolorem deleniti earum ullam quam,
-                      nostrum corporis doloribus. Minus ut nulla ducimus illum
-                      rem neque asperiores veniam?
-                    </p>
-                  </div>
-                  <div role="tabpanel" class="tab-pane" id="nav-outline">
-                    <h5 class="fw-bold">Outline</h5>
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Consequuntur sint iste ab doloribus. Nam consectetur
-                      praesentium, porro omnis aliquam, eveniet beatae, non vero
-                      aliquid distinctio ad commodi nulla ullam pariatur quis
-                      est. Magnam expedita fugiat illo! In voluptatibus sit
-                      nobis atque, ipsum eveniet voluptas, assumenda modi magni
-                      quos quidem nulla quasi harum hic? Vel, dolorem alias.
-                      Deleniti aut, et quis ipsum quidem deserunt maxime optio
-                      voluptates, blanditiis nulla similique libero vel ipsam
-                      labore voluptatum officiis, error placeat provident
-                      explicabo laborum tempora expedita? Tempora nemo sequi
-                      quas cum dolorum alias ratione, inventore adipisci quod
-                      quia nihil est praesentium accusamus labore magnam,
-                      quisquam libero iure dolorem deleniti earum ullam quam,
-                      nostrum corporis doloribus. Minus ut nulla ducimus illum
-                      rem neque asperiores veniam?
-                    </p>
-                  </div>
-                  <div role="tabpanel" class="tab-pane" id="nav-form">
-                    <h5 class="fw-bold">Form Pre-Registrasi</h5>
-                    <div class="form">
-                      <div class="note">
-                        <p class="mb-4 text-danger">
-                          *Silahkan lakukan pengisian data pada kolom formulir
-                          dibawah ini dengan benar dan lengkap
-                        </p>
-                      </div>
-                      <div class="form-registration w-100">
-                        <div class="form-registration w-100">
-                          <form
-                            method="post"
-                            action=""
-                            class="mb-2"
-                            enctype="multipart/form-data"
-                          >
-                            <div class="mb-2">
-                              <h3 class="fw-bold text-center">
-                                Data Materi Training
-                              </h3>
-                            </div>
-                            <div class="mb-2">
-                              <div class="course w-100 mb-3">
-                                <label for="course" class="form-label"
-                                  >Training yang dibutuhkan</label
-                                >
-                                <select class="form-select" name="course_id">
-                                  <option value="" selected>
-                                    Training Lorem ipsum
-                                  </option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="mb-2">
-                              <div class="number-of-participants w-100 mb-3">
-                                <label
-                                  for="number-of-participants"
-                                  class="form-label"
-                                  >Jumlah Peserta
-                                  <span class="text-danger">*</span></label
-                                >
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="number-of-participants"
-                                  name="number-of-participants"
-                                  required
-                                  value=""
-                                />
-                              </div>
-                            </div>
-                            <div class="mb-2">
-                              <div class="participant-name w-100 mb-3">
-                                <label for="address" class="form-label"
-                                  >Nama Peserta Yang Didaftarkan
-                                  <span class="text-danger">*</span></label
-                                >
-                                <textarea
-                                  class="form-control"
-                                  id="participant-name"
-                                  name="participant-name"
-                                  value=""
-                                ></textarea>
-                              </div>
-                            </div>
-                            <div class="mb-2">
-                              <h3 class="fw-bold text-center">Data Personal</h3>
-                            </div>
-                            <div class="mb-2">
-                              <div class="name w-100 mb-2 mb-md-0">
-                                <label for="name" class="form-label"
-                                  >Nama
-                                  <span class="text-danger">*</span></label
-                                >
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="name"
-                                  name="name"
-                                  required
-                                  value=""
-                                />
-                              </div>
-                            </div>
-                            <div class="mb-3" hidden>
-                              <input
-                                type="text"
-                                placeholder="Slug"
-                                class="form-control @error('slug') is-invalid @enderror"
-                                id="slug"
-                                name="slug"
-                                required
-                                value="{{ old('slug') }}"
-                              />
-                            </div>
-                            <div class="mb-2">
-                              <div class="position w-100 mb-2 mb-md-0">
-                                <label for="position" class="form-label"
-                                  >Jabatan
-                                  <span class="text-danger">*</span></label
-                                >
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="company-name"
-                                  name="company-name"
-                                  required
-                                  value=""
-                                  placeholder="Jabatan / Divisi / Departemen"
-                                />
-                              </div>
-                            </div>
-                            <div class="mb-2">
-                              <div class="company-name w-100 mb-2 mb-md-0">
-                                <label for="company-name" class="form-label"
-                                  >Nama Perusahaan
-                                  <span class="text-danger">*</span></label
-                                >
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="company-name"
-                                  name="company-name"
-                                  required
-                                  value=""
-                                />
-                              </div>
-                            </div>
-                            <div class="mb-2">
-                              <label for="address" class="form-label"
-                                >Alamat Perusahaan
-                                <span class="text-danger">*</span></label
-                              >
-                              <textarea
-                                class="form-control"
-                                id="address"
-                                name="address"
-                                value=""
-                              ></textarea>
-                            </div>
-                            <div class="d-md-flex pt-2 pb-2 mb-2">
-                              <div class="company-email w-100 mb-2 mb-md-0">
-                                <label for="company-email" class="form-label">
-                                  Email Perusahaan
-                                  <span class="text-danger">*</span></label
-                                >
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="company-email"
-                                  name="company-email"
-                                  required
-                                  value=""
-                                />
-                              </div>
-                              <div class="alternative-email w-100 mb-2 mb-md-0">
-                                <label
-                                  for="alternative-email"
-                                  class="form-label"
-                                >
-                                  Email Alternatif
-                                  <span class="text-danger">*</span></label
-                                >
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="alternative-email"
-                                  name="alternative-email"
-                                  required
-                                  value=""
-                                />
-                              </div>
-                            </div>
-                            <div class="d-md-flex pt-2 pb-2 mb-2">
-                              <div class="company-phone w-100">
-                                <label for="company-phone" class="form-label"
-                                  >Nomor Telepon Kantor
-                                  <span class="text-danger">*</span></label
-                                >
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="company-phone"
-                                  name="company-phone"
-                                  required
-                                  value=""
-                                />
-                              </div>
-                              <div class="personal-phone w-100">
-                                <label for="personal-phone" class="form-label"
-                                  >Nomor Handphone
-                                  <span class="text-danger">*</span></label
-                                >
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="personal-phone"
-                                  name="personal-phone"
-                                  required
-                                  value=""
-                                />
-                              </div>
-                            </div>
-                            <div class="mb-2">
-                              <label for="extention" class="form-label"
-                                >Ekstensi</label
-                              >
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="extention"
-                                name="extention"
-                                required
-                                value=""
-                              />
-                            </div>
-                            <div class="d-flex mt-4 justify-content-end">
-                              <button
-                                type="submit"
-                                class="btn btn-theme register"
-                              >
-                                <i class="ri-save-3-line me-1"></i>Daftar
-                              </button>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+      <!-- theory start -->
+      <section class="course-theory section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="title text-center">
+                <h3 class="fw-bold">Materi</h3>
               </div>
-              <div class="col-lg-4">
-                <div class="learning-method pb-3 pt-3 border-bottom">
-                  <p class="fw-bold">Jadwal Pelatihan</p>
-                </div>
-                <table class="table">
+              <div class="description">
+                <ul>
+                  <li>
+                    <i class="fa-regular fa-circle-check me-2"></i>Menjelaskan
+                    tugas, wewenang dan tanggung jawab Ahli K3
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check me-2"></i>
+                    Menjelaskan hak pekerja dalam bidang K3
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check me-2"></i>Menjelaskan
+                    kepada pengusaha bahwa upaya K3 menguntungkan bagi
+                    perusahaan
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check me-2"></i>Menjelaskan
+                    tujuan sistem manajemen K3 (SMK3)
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check me-2"></i>Menjelaskan
+                    sistem pelaporan kecelakaan
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check me-2"></i>Menganalisa
+                    kasus kecelakaan, mengetahui faktor penyebabnya dan dapat
+                    menyiapkan laporan kecelakaan kepada pihak terkait.
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check me-2"></i>
+                    Mengenal P2K3, tugas, tanggung jawab dan wewenang organisasi
+                    ini – Mengenal pembinaan dan pengawasan K3 di tingkat
+                    perusahaan, Nasional dan Internasional
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check me-2"></i>
+                    Mengidentifikasi obyek pengawasan K3
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check me-2"></i>
+                    Mengetahui persyaratan dan pemenuhan terhadap peraturan
+                    perundangan di tempat kerja.
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check me-2"></i>
+                    Mengetahui persyaratan keselamatan dan kesehatan kerja di
+                    tempat kerja
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check me-2"></i>
+                    Mengetahui proses audit dan ruang lingkupnya untuk mengukur
+                    tingkat pencapaian
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- theory end -->
+
+      <!-- facility & schedule start -->
+      <section class="facility-schedule-section section-padding pt-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="title text-center">
+                <h3 class="fw-bold">Fasilitas</h3>
+              </div>
+              <div class="description">
+                <ul>
+                  <li>
+                    <i class="fa-regular fa-circle-check me-2"></i>Sertifikat
+                    Calon AK3U KEMNAKER RI
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check me-2"></i>
+                    SKP dan Lisensi AK3U KEMNAKER RI (Company)
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check me-2"></i>
+                    Training Kit (Bag, Notes, Bulpen)
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check me-2"></i>
+                    Hardcopy Undang-Undang AK3U
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check me-2"></i>
+                    Softcopy Modul Pelatihan & UU K3
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check me-2"></i>
+                    Kemeja Safety Eksklusif
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-circle-check me-2"></i>
+                    Lencana dan Pin AK3U
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 box">
+              <div class="title text-center">
+                <h3 class="fw-bold">Jadwal Terdekat</h3>
+              </div>
+              <div class="description">
+                <table class="table table-striped">
                   <thead>
                     <tr>
+                      <th scope="col">Program</th>
                       <th scope="col">Tanggal</th>
-                      <th scope="col">Kota</th>
+                      <th scope="col">Skema</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">12/12/22</th>
-                      <td>Jakarta</td>
+                      <td>Ahli K3 Umum</td>
+                      <td>26/07/2023 - 10/08/2023</td>
+                      <td>Online Training</td>
                     </tr>
                     <tr>
-                      <th scope="row">12/12/22</th>
-                      <td>Jakarta</td>
+                      <td>Ahli K3 Umum</td>
+                      <td>26/07/2023 - 10/08/2023</td>
+                      <td>Online Training</td>
                     </tr>
                     <tr>
-                      <th scope="row">12/12/22</th>
-                      <td>Jakarta</td>
+                      <td>Ahli K3 Umum</td>
+                      <td>26/07/2023 - 10/08/2023</td>
+                      <td>Online Training</td>
                     </tr>
                   </tbody>
                 </table>
@@ -707,144 +527,104 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <footer class="footer position-relative">
+      <!-- Footer Start -->
+      <!-- Footer Start -->
+      <footer id="footer" class="footer bg-light">
         <div class="footer-top">
-          <div class="container border-top border-bottom">
-            <div class="row">
-              <div class="col-md-4 order-md-0">
-                <div class="py-lg-5">
-                  <div class="footer-item">
-                    <div class="footer-brand">
-                      <h2>New Project</h2>
-                    </div>
-                    <div class="footer-address">
-                      <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Magni labore qui dicta 55511
-                      </p>
-                    </div>
-                    <div class="footer-social-media">
-                      <ul
-                        class="sosmed-items d-flex me-5 ms-3 justify-content-between"
-                      >
-                        <li>
-                          <a href="https://www.facebook.com/intansafety"
-                            ><i class="fab fa-facebook icon fs-5"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="https://twitter.com/intansafety_yk?lang=en"
-                            ><i class="fab fa-twitter icon fs-5"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="https://www.instagram.com/intansafetyjogja/"
-                            ><i class="fab fa-instagram icon fs-5"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://id.linkedin.com/company/intansafetyjogja"
-                            ><i class="fab fa-linkedin-in icon fs-5"></i
-                          ></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-8 order-md-1">
-                <div class="row justify-content-end py-lg-5">
-                  <div class="col-md-5 mt-3 mt-md-0">
-                    <div class="footer-item text-start">
-                      <h3 class="fs-3 fw-bolder">Lorem ipsum dolorsit amet.</h3>
-                      <p>Tentang Kami</p>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-3 col-sm-6 mt-3 mt-md-0">
-                    <div class="footer-item ms-md-5 text-start">
-                      <ul>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Program</a></li>
-                        <li><a href="#">Register</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-3 col-sm-6 mt-3 mt-md-0">
-                    <div class="footer-item text-start">
-                      <ul>
-                        <li><a href="#">Hubungi Kami</a></li>
-                        <li><a href="#">FAQ</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
           <div class="container">
-            <p class="m-0 py-4 text-center">Copyright &copy;2023 New Project</p>
-          </div>
-        </div>
-      </footer>
-    </div>
+            <div class="row justify-content-between">
+              <div class="col-lg-4 col-md-6 footer-widget footer-about">
+                <h3 class="widget-title">Tentang Kami</h3>
+                <img
+                  loading="lazy"
+                  class="footer-logo mb-2"
+                  src="img/company-logo.png"
+                  alt="Arsa Consultant"
+                />
+                <p>
+                  Penyedia pelatihan dan sertifikasi K3 yang berlisensi resmi
+                  dari KEMNAKER RI dan BNSP
+                </p>
+              </div>
+              <!-- Col end -->
 
-    <!-- video popup Start -->
-    <!-- <div class="video-popup">
-        <div class="video-popup-inner">
-          <i class="fa-solid fa-circle-xmark video-popup-close"></i>
-          <div class="iframe-box">
-            <iframe
-              id="player-1"
-              src="https://www.youtube.com/embed/LWBNRyNCWCQ"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-      </div> -->
-    <!-- video popup end -->
+              <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
+                <h3 class="widget-title">Jam Kerja</h3>
+                <div class="working-hours">
+                  Senin - Jumat:
+                  <span class="text-right">08:00 - 16:30 </span>
+                  <br />
+                  Sabtu dan Minggu: <span class="text-right">Tutup</span> <br />
+                </div>
+              </div>
+              <!-- Col end -->
 
-    <!-- course preview modal start -->
-    <div
-      class="modal fade video-modal js-course-preview-modal"
-      id="video-modal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body p-0">
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            >
-              <i class="fa-solid fa-circle-xmark"></i>
-            </button>
-            <div class="ratio ratio-16x9">
-              <iframe
-                id="player-1"
-                src="https://www.youtube.com/embed/LWBNRyNCWCQ"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+              <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
+                <h3 class="widget-title">Pelatihan dan Pembinaan</h3>
+                <ul class="list-unstyled">
+                  <li class="text-decoration-none">
+                    <a href="/sertifikasi-kemnaker-ri"
+                      ><i class="fa-solid fa-caret-right me-2"></i>Sertifikasi
+                      Kemnaker RI</a
+                    >
+                  </li>
+                  <li class="text-decoration-none">
+                    <a href="/sertifikasi-bnsp"
+                      ><i class="fa-solid fa-caret-right me-2"></i>Sertifikasi
+                      BNSP</a
+                    >
+                  </li>
+                  <li class="text-decoration-none">
+                    <a href="/softskill"
+                      ><i class="fa-solid fa-caret-right me-2"></i>Softskill</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- Col end -->
             </div>
+            <!-- Row end -->
           </div>
+          <!-- Container end -->
         </div>
-      </div>
+        <!-- Footer main end -->
+
+        <div class="footer-bottom bg-dark text-white">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-12">
+                <div class="copyright-info text-center">
+                  <span id="copyright"></span>
+                  <span
+                    >Copyright &copy;
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>
+                    <a href="" class="text-decoration-none text-white"
+                      >Arsa Consultant</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Row end -->
+          </div>
+          <!-- Container end -->
+        </div>
+        <!-- Copyright end -->
+      </footer>
+      <!-- Footer End -->
     </div>
-    <!-- course preview modal end -->
 
     <!-- JavaScript Bundle with Popper -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
@@ -852,11 +632,12 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- slick -->
     <script
-      src="https://code.jquery.com/jquery-3.6.1.min.js"
-      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-      crossorigin="anonymous"
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script src="plugins/slick-animation/slick-animation.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
@@ -864,42 +645,5 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="js/main.js"></script>
-    <script>
-      $(".nav-tabs li a").click(function (e) {
-        //get selected href
-        var href = $(this).attr("href");
-
-        //set all nav tabs to inactive
-        $(".nav-tabs li").removeClass("active");
-
-        //get all nav tabs matching the href and set to active
-        $('.nav-tabs li a[href="' + href + '"]')
-          .closest("li")
-          .addClass("active");
-
-        //active tab
-        $(".tab-pane").removeClass("active");
-        $(".tab-pane" + href).addClass("active");
-      });
-      // $(".course-detail-carousel").owlCarousel({
-      //   margin: 16,
-      //   dots: false,
-      //   nav: false,
-      //   stagePadding: 50,
-      //   responsiveClass: true,
-      //   responsive: {
-      //     0: {
-      //       items: 1,
-      //       // nav: true,
-      //     },
-      //     600: {
-      //       items: 2,
-      //     },
-      //     1000: {
-      //       items: 3,
-      //     },
-      //   },
-      // });
-    </script>
   </body>
 </html>

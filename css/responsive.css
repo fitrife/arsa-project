@@ -201,6 +201,19 @@
   .about-item .about-item-inner .desc {
     font-size: 16px;
   }
+  .facility-section .owl-carousel .owl-nav [class*="owl-"] {
+    background-color: rgba(21, 21, 21, 0.5);
+    color: #fff;
+    border: none;
+  }
+
+  .facility-section .owl-carousel .owl-nav button.owl-prev {
+    left: 15px;
+  }
+
+  .facility-section .owl-carousel .owl-nav button.owl-next {
+    right: 15px;
+  }
 }
 
 @media (max-width: 575px) {
