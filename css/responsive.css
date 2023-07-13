@@ -43,9 +43,6 @@
   .course .owl-carousel .owl-nav span {
     visibility: hidden;
   }
-  .header {
-    padding: 12px 0;
-  }
   .header .header-menu {
     position: fixed;
     right: -280px;
@@ -258,9 +255,6 @@
     width: 130px;
     border-radius: 50px;
     border-color: var(--main-color);
-  }
-  .header {
-    padding: 28px 0 16px 0;
   }
   .header-logo img {
     max-height: 38px;

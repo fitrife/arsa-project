@@ -193,7 +193,7 @@
         <div class="container position-relative">
           <div class="row">
             <div class="col-md-10">
-              <h1 class="display-4 fw-bolder">Blog Kami</h1>
+              <h1 class="display-4 fw-bolder">Registrasi</h1>
               <p class="mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -206,156 +206,269 @@
       <!-- /page title -->
 
       <!-- Blog Start -->
-      <section id="blog" class="blog-section section-padding">
+      <section class="registration section-padding">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mb-5 mb-lg-0">
-              <div class="post border-0 mb-0 pb-0">
-                <div class="post-image">
-                  <img
-                    loading="lazy"
-                    src="img/sample.jpg"
-                    class="img-fluid"
-                    alt="post-image"
-                  />
-                </div>
-
-                <div class="post-body">
-                  <div class="post-header">
-                    <div class="post-meta">
-                      <span class="post-author">
-                        <i class="far fa-user"></i><a href="#"> Admin</a>
-                      </span>
-                      <span class="post-category">
-                        <i class="far fa-folder-open"></i><a href="#"> News</a>
-                      </span>
-                      <span class="post-date"
-                        ><i class="far fa-calendar"></i> June 14, 2016</span
-                      >
+          <div class="form-applicant">
+            <div
+              class="tab-pane fade active show"
+              id="form"
+              role="tabpanel"
+              aria-labelledby="form-tab"
+            >
+              <div class="form box">
+                <div class="row d-flex justify-content-center mb-md-5">
+                  <div class="col-md-3">
+                    <div class="title text-center">
+                      <img
+                        src="img/logo.png"
+                        class="p-md-3"
+                        alt="arsa consultant"
+                      />
                     </div>
-                    <h3 class="post-title">
-                      We Just Completes $17.6 million Medical Clinic in
-                      Mid-Missouri
-                    </h3>
                   </div>
-                  <!-- header end -->
-
-                  <!-- Post start -->
-                  <div class="post-content">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur.
-                    </p>
-
-                    <p class="mt-2">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptates possimus velit repellendus tenetur vero quod
-                      nisi eos molestiae, asperiores neque, aspernatur
-                      consequatur, architecto quos? Voluptate suscipit, iure
-                      omnis temporibus libero inventore. Quae adipisci placeat,
-                      dignissimos vero rem officiis sed quas dolor ducimus
-                      exercitationem odio pariatur, ipsa repellendus culpa saepe
-                      asperiores?
-                    </p>
-
-                    <p class="mt-2">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Deleniti, cupiditate iusto quisquam provident dolores fuga
-                      harum. Sapiente tempore velit ut doloribus. Dignissimos
-                      provident cum repellendus reiciendis cumque minima, quae
-                      molestias repudiandae debitis quaerat nam accusantium
-                      possimus? Veritatis fugit consectetur, vel inventore unde
-                      impedit! Perferendis quod ut nesciunt non iure? Aliquam?
-                    </p>
+                  <div class="col-md-8 d-flex align-items-center">
+                    <div class="title">
+                      <h3 class="text-capitalize mb-2">
+                        Formulir Registrasi Pelatihan Sertifikasi BNSP
+                      </h3>
+                      <h4 class="fw-bold">Arsa Consultant</h4>
+                      <p>
+                        Silakan lakukan pengisian data pada kolom formulir
+                        dibawah ini dengan benar dan lengkap, serta sesuai
+                        dengan program pelatihan/pembinaan yang ingin Anda ikuti
+                        (<a
+                          href="schedules.html"
+                          class="text-secondary text-underline"
+                          >Lihat Kalender Program Pelatihan Tahun 2023 sebagai
+                          referensi</a
+                        >)
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <!-- post-body end -->
+                <div class="form-registration w-100">
+                  <form
+                    method="post"
+                    action="/pendaftaran-bnsp"
+                    class="mb-2"
+                    enctype="multipart/form-data"
+                  >
+                    <input
+                      type="hidden"
+                      name="_token"
+                      value="QOco2vJ3YasLpwC8lVUvMX1yUo8YEA5ao3xIZDny"
+                    />
+                    <div class="d-md-flex pt-2 pb-2 mb-2">
+                      <div class="name w-100 mb-2 mb-md-0">
+                        <label for="name" class="form-label"
+                          >Nama Lengkap
+                          <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          name="name"
+                          required=""
+                          value=""
+                        />
+                      </div>
+                      <div class="mb-3" hidden="">
+                        <input
+                          type="text"
+                          placeholder="Slug"
+                          class="form-control"
+                          id="slug"
+                          name="slug"
+                          required=""
+                          value=""
+                        />
+                      </div>
+                      <div class="birthdate w-100">
+                        <label for="birthdate" class="form-label"
+                          >Tempat Tanggal Lahir
+                          <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="birthdate"
+                          name="birthdate"
+                          required=""
+                          value=""
+                        />
+                      </div>
+                    </div>
+                    <div class="d-md-flex pt-2 pb-2 mb-2">
+                      <div class="email w-100 mb-2 mb-md-0">
+                        <label for="email" class="form-label">
+                          Alamat Email <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="email"
+                          name="email"
+                          required=""
+                          value=""
+                        />
+                      </div>
+                      <div class="phone w-100">
+                        <label for="phone" class="form-label"
+                          >Nomor Telepon (Whatsapp)
+                          <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="phone"
+                          name="phone"
+                          required=""
+                          value=""
+                        />
+                      </div>
+                    </div>
+                    <div class="d-md-flex pt-2 pb-2 mb-2">
+                      <div class="education w-100 mb-2 mb-md-0">
+                        <label for="education" class="form-label">
+                          Jenjang Pendidikan Terakhir
+                          <span class="text-danger">*</span></label
+                        >
+                        <select class="form-select" name="education_id">
+                          <option value="1">SMA / SMK</option>
+                          <option value="2">D3</option>
+                          <option value="3">D4 / S1</option>
+                          <option value="4">S2</option>
+                          <option value="5">S3</option>
+                        </select>
+                      </div>
+                      <div class="job w-100">
+                        <label for="job" class="form-label"
+                          >Status Pekerjaan
+                          <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="job"
+                          name="job"
+                          required=""
+                          value=""
+                        />
+                      </div>
+                      <div class="company w-100">
+                        <label for="company" class="form-label"
+                          >Asal Perusahaan</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="company"
+                          name="company"
+                          value=""
+                          placeholder="Khusus bagi yang sedang bekerja"
+                        />
+                      </div>
+                    </div>
+                    <div class="mb-2">
+                      <label for="company_address" class="form-label"
+                        >Alamat Perusahaan</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="company_address"
+                        name="company_address"
+                        value=""
+                        placeholder="Khusus bagi yang sedang bekerja"
+                      ></textarea>
+                    </div>
+                    <div class="mb-2">
+                      <label for="company_messenger" class="form-label"
+                        >Apakah Anda termasuk utusan perusahaan ?</label
+                      >
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="company_messenger"
+                          id="ya"
+                          value="Ya"
+                        />
+                        <label class="form-check-label" for="ya">Ya</label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="company_messenger"
+                          id="bukan"
+                          value="Bukan"
+                        />
+                        <label class="form-check-label" for="bukan"
+                          >Bukan</label
+                        >
+                      </div>
+                    </div>
+                    <div class="mb-2">
+                      <label for="have_attended_training" class="form-label"
+                        >Apakah Anda pernah mengikuti Program Pelatihan K3
+                        ?</label
+                      >
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="have_attended_training"
+                          id="pernah"
+                          value="Pernah"
+                        />
+                        <label class="form-check-label" for="pernah"
+                          >Pernah</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="have_attended_training"
+                          id="belum"
+                          value="Belum Pernah"
+                        />
+                        <label class="form-check-label" for="belum"
+                          >Belum Pernah</label
+                        >
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="program" class="form-label"
+                        >Program Sertifikasi BNSP yang dipilih
+                        <span class="text-danger">*</span></label
+                      >
+                      <select class="form-select" name="program_id">
+                        <option value="3">Ahli K3 Umum BNSP</option>
+                        <option value="15">
+                          Pengawas Operasional Pertama (POP)
+                        </option>
+                        <option value="16">
+                          Penanggungjawab Operasional Pengolahan Air Limbah
+                          (POPAL)
+                        </option>
+                        <option value="17">
+                          Penanggungjawab Pengendalian Pencemaran Air (PPPA)
+                        </option>
+                      </select>
+                    </div>
+                    <div class="d-flex">
+                      <button type="submit" class="btn btn-primary py-3 px-5">
+                        <i class="ri-save-3-line me-1"></i>Daftar
+                      </button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
-            <!-- Content Col end -->
-
-            <div class="col-lg-4">
-              <div class="sidebar sidebar-right">
-                <div class="widget recent-posts">
-                  <h3 class="widget-title">Artikel Terbaru</h3>
-                  <ul class="list-unstyled">
-                    <li class="d-flex align-items-center">
-                      <div class="col-4 posts-thumbnail">
-                        <a href="#"
-                          ><img loading="lazy" alt="img" src="img/sample.jpg"
-                        /></a>
-                      </div>
-                      <div class="col-8 post-info">
-                        <h4 class="post-title">
-                          <a href="#"
-                            >We Just Completes $17.6 Million Medical Clinic In
-                            Mid-missouri</a
-                          >
-                        </h4>
-                      </div>
-                    </li>
-                    <!-- 1st post end-->
-
-                    <li class="d-flex align-items-center">
-                      <div class="col-4 posts-thumbnail">
-                        <a href="#"
-                          ><img loading="lazy" alt="img" src="img/sample.jpg"
-                        /></a>
-                      </div>
-                      <div class="col-8 post-info">
-                        <h4 class="post-title">
-                          <a href="#"
-                            >We Just Completes $17.6 Million Medical Clinic In
-                            Mid-missouri</a
-                          >
-                        </h4>
-                      </div>
-                    </li>
-                    <!-- 2nd post end-->
-
-                    <li class="d-flex align-items-center">
-                      <div class="col-4 posts-thumbnail">
-                        <a href="#"
-                          ><img loading="lazy" alt="img" src="img/sample.jpg"
-                        /></a>
-                      </div>
-                      <div class="col-8 post-info">
-                        <h4 class="post-title">
-                          <a href="#"
-                            >We Just Completes $17.6 Million Medical Clinic In
-                            Mid-missouri</a
-                          >
-                        </h4>
-                      </div>
-                    </li>
-                    <!-- 3rd post end-->
-                  </ul>
-                </div>
-                <!-- Recent post end -->
-
-                <div class="widget">
-                  <h3 class="widget-title">Kategori</h3>
-                  <ul class="arrow nav nav-tabs">
-                    <li><a href="index.html">Construction</a></li>
-                    <li><a href="#">Commercial</a></li>
-                    <li><a href="#">Building</a></li>
-                    <li><a href="#">Safety</a></li>
-                    <li><a href="#">Structure</a></li>
-                  </ul>
-                </div>
-                <!-- Categories end -->
-              </div>
-              <!-- Sidebar end -->
-            </div>
-            <!-- Sidebar Col end -->
           </div>
-          <!-- Main row end -->
         </div>
-        <!-- Container end -->
       </section>
       <!-- Blog End -->
 
