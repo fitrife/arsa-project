@@ -2881,21 +2881,7 @@ header .navbar-light .navbar-nav .nav-link:hover {
     ------------------------------ */
 .blog-section {
   padding: auto;
-  /* height: 100vh; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   max-width: 100%;
-}
-.blog-section:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 0;
-  border-radius: 0 100px 0 100px;
 }
 .blog-section .blog-bg {
   position: absolute;
