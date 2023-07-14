@@ -86,22 +86,24 @@ $("[data-background]").each(function () {
 });
 
 //Hero Slider
-$(".hero-slider").slick({
-  autoplay: true,
-  autoplaySpeed: 7500,
-  pauseOnFocus: false,
-  pauseOnHover: false,
-  infinite: true,
-  arrows: true,
-  fade: true,
-  dots: true,
-});
-$(".hero-slider").slickAnimation();
 
-$(window).on("scroll", function () {
-  counter();
-});
+$(document).ready(function () {
+  $(".hero-slider").slick({
+    autoplay: true,
+    autoplaySpeed: 7500,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    infinite: true,
+    arrows: true,
+    fade: true,
+    dots: true,
+  });
+  $(".hero-slider").slickAnimation();
 
+  $(window).on("scroll", function () {
+    counter();
+  });
+});
 /* ----------------------------
       nevbar shrink
   ------------------------------- */
