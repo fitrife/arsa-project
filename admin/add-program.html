@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Administrator | Pusat Pelatihan K3</title>
+    <title>Administrator | Arsa Consultant</title>
 
     <!-- Icon -->
-    <link rel="icon" href="../images/logo.png" type="image/x-icon" />
+    <link rel="icon" href="../img/logo.png" type="image/x-icon" />
 
     <!-- Font Awesome -->
     <link
@@ -49,10 +49,8 @@
       type="text/css"
       href="../plugins/datatables/datatables.min.css"
     />
-    <!-- Summernote -->
-    <link rel="stylesheet" href="../plugins/summernote/summernote-lite.css" />
 
-    <!-- Pusat Pelatihan K3 Style -->
+    <!-- Custom Style -->
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
@@ -60,7 +58,7 @@
     <div class="sidebar position-fixed top-0 bottom-0 bg-white border-end">
       <div class="d-flex align-items-center p-3">
         <a href="#" class="sidebar-logo">
-          <img src="../images/logo.png" alt="Pusat Pelatihan K3" />
+          <img src="../img/logo.png" alt="Arsa Consultant" />
         </a>
         <i
           class="sidebar-toggle fa-regular fa-circle-left ms-auto fs-5 d-none d-md-block"
@@ -69,35 +67,35 @@
       <ul class="sidebar-menu p-3 m-0 mb-0">
         <li class="sidebar-menu-divider mt-3 mb-1 text-uppercase">Form</li>
         <li class="sidebar-menu-item">
-          <a href="#">
+          <a href="all-messages.html">
             <i class="fa-solid fa-envelope sidebar-menu-item-icon"></i>
             Pesan</a
           >
         </li>
         <!-- <li class="sidebar-menu-divider mt-3 text-uppercase">Custom</li> -->
         <li class="sidebar-menu-item">
-          <a href="#">
+          <a href="all-inhouse.html">
             <i class="fa-solid fa-user-tie sidebar-menu-item-icon"></i> Inhouse
           </a>
         </li>
         <li class="sidebar-menu-item">
-          <a href="#">
+          <a href="all-public.html">
             <i class="fa-solid fa-people-group sidebar-menu-item-icon"></i>
             Public
           </a>
         </li>
         <li class="sidebar-menu-item">
-          <a href="#">
+          <a href="all-kemnaker.html">
             <i class="fa-solid fa-k sidebar-menu-item-icon"></i> Kemnaker
           </a>
         </li>
         <li class="sidebar-menu-item">
-          <a href="#">
+          <a href="all-bnsp.html">
             <i class="fa-solid fa-b sidebar-menu-item-icon"></i> BNSP
           </a>
         </li>
         <li class="sidebar-menu-item">
-          <a href="#">
+          <a href="all-softskill.html">
             <i class="fa-solid fa-s sidebar-menu-item-icon"></i> Softskill
           </a>
         </li>
@@ -108,14 +106,8 @@
             Program</a
           >
         </li>
-        <li class="sidebar-menu-item d-none">
-          <a href="#">
-            <i class="fa-solid fa-rupiah-sign sidebar-menu-item-icon"></i>
-            Biaya
-          </a>
-        </li>
         <li class="sidebar-menu-item">
-          <a href="#">
+          <a href="all-schedules.html">
             <i class="fa-solid fa-calendar-days sidebar-menu-item-icon"></i>
             Jadwal
           </a>
@@ -123,13 +115,13 @@
 
         <li class="sidebar-menu-divider mt-3 mb-1 text-uppercase">Blog</li>
         <li class="sidebar-menu-item">
-          <a href="#">
+          <a href="all-categories.html">
             <i class="fa-solid fa-rectangle-list sidebar-menu-item-icon"></i>
             Kategori
           </a>
         </li>
         <li class="sidebar-menu-item">
-          <a href="#">
+          <a href="all-articles.html">
             <i class="fa-regular fa-newspaper sidebar-menu-item-icon"></i>
             Artikel
           </a>
@@ -137,7 +129,7 @@
 
         <li class="sidebar-menu-divider mt-3 mb-1 text-uppercase">Staff</li>
         <li class="sidebar-menu-item">
-          <a href="#">
+          <a href="all-staff.html">
             <i class="fa-solid fa-users-rectangle sidebar-menu-item-icon"></i>
             Customer Service
           </a>
@@ -153,20 +145,20 @@
         <!-- navbar start -->
         <nav class="px-3 py-2 bg-white rounded shadow">
           <i class="ri-menu-line sidebar-toggle me-3 d-block d-md-none"></i>
-          <h5 class="fw-bold mb-0 me-auto">
+          <h4 class="fw-bold mb-0 me-auto">
             Tambah Program Pelatihan & Pembinaan
-          </h5>
+          </h4>
           <div class="dropdown">
             <div
               class="d-flex align-items-center cursor-pointer dropdown-toggle"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <span class="me-2 d-none d-sm-block">Admin PPK3</span>
+              <span class="me-2 d-none d-sm-block">Administrator</span>
               <img
                 class="navbar-profile-image"
-                src="../images/logo.png"
-                alt="user-img"
+                src="../img/logo.png"
+                alt="Administrator"
               />
             </div>
             <ul class="dropdown-menu">
@@ -200,7 +192,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
               <form
                 method="post"
                 action="/dashboard/programs"
@@ -254,13 +246,33 @@
                   />
                 </div>
                 <div class="mb-3">
+                  <label for="duration" class="form-label"
+                    >Durasi <span class="text-danger">*</span></label
+                  >
+                  <textarea
+                    id="duration"
+                    type="hidden"
+                    name="duration"
+                  ></textarea>
+                </div>
+                <div class="mb-3">
                   <label for="description" class="form-label"
-                    >Deskripsi <span class="text-danger">*</span></label
+                    >Latar Belakang <span class="text-danger">*</span></label
                   >
                   <textarea
                     id="description"
                     type="hidden"
                     name="description"
+                  ></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="benefit" class="form-label"
+                    >Manfaat <span class="text-danger">*</span></label
+                  >
+                  <textarea
+                    id="benefit"
+                    type="hidden"
+                    name="benefit"
                   ></textarea>
                 </div>
                 <div class="mb-3">
@@ -270,29 +282,59 @@
                   <textarea id="theory" type="hidden" name="theory"></textarea>
                 </div>
                 <div class="mb-3">
-                  <label for="certificate" class="form-label"
-                    >Persyaratan Peserta
-                    <span class="text-danger">*</span></label
+                  <label for="facility" class="form-label"
+                    >Fasilitas <span class="text-danger">*</span></label
                   >
-                  <input
-                    id="participant_requirement"
+                  <textarea
+                    id="facility"
                     type="hidden"
-                    name="participant_requirement"
-                    value="{{ old('participant_requirement') }}"
-                  />
-                  <trix-editor input="participant_requirement"></trix-editor>
+                    name="theory"
+                  ></textarea>
                 </div>
                 <div class="mb-3">
                   <label for="certificate" class="form-label"
                     >Sertifikat <span class="text-danger">*</span></label
                   >
-                  <input
+                  <textarea
                     id="certificate"
                     type="hidden"
                     name="certificate"
-                    value="{{ old('certificate') }}"
+                  ></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="certificate" class="form-label"
+                    >Persyaratan Peserta
+                    <span class="text-danger">*</span></label
+                  >
+
+                  <textarea
+                    id="participant_requirement"
+                    type="hidden"
+                    name="participant_requirement"
+                  ></textarea>
+                </div>
+                <h4>Kebutuhan SEO</h4>
+                <div class="mb-3">
+                  <label
+                    for="meta_desc"
+                    class="form-label meta_desc"
+                    name="meta_desc"
+                    >Meta Description <span class="text-danger">*</span></label
+                  ><textarea
+                    id="meta_desc"
+                    name="meta_desc"
+                    class="form-control"
+                  ></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="keywords" class="form-label"
+                    >Meta Keywords <span class="text-danger">*</span></label
+                  ><input
+                    type="text"
+                    class="form-control"
+                    id="keywords"
+                    name="keywords"
                   />
-                  <trix-editor input="certificate"></trix-editor>
                 </div>
                 <div class="d-flex">
                   <button type="submit" class="btn btn-success me-1">
@@ -309,7 +351,6 @@
         <!-- program end -->
       </div>
     </div>
-
     <!-- main wrapper end -->
 
     <!-- JQuery -->
@@ -351,7 +392,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- Pelatihan K3 -->
+    <!-- Arsa Consultant -->
     <script src="../js/script.js"></script>
     <script
       type="text/javascript"
@@ -362,22 +403,69 @@
       charset="utf8"
       src="../plugins/datatables/datatables.min.js"
     ></script>
-    <script src="../plugins/summernote/summernote-lite.js"></script>
+    <!-- CKEditor -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
     <script>
-      $(document).ready(function () {
-        $(
-          "#description, #participant_requirement, #theory, #certificate"
-        ).summernote({
-          height: 150,
-          toolbar: [
-            ["style", ["style"]],
-            ["font", ["bold", "underline", "clear"]],
-            ["color", ["color"]],
-            ["para", ["ul", "ol", "paragraph"]],
-            ["table", ["table"]],
-            ["insert", ["link", "picture", "video"]],
-            ["view", ["fullscreen", "codeview", "help"]],
-          ],
+      window.addEventListener("DOMContentLoaded", (event) => {
+        ClassicEditor.create(document.querySelector("#duration")).catch(
+          (error) => {
+            console.error(error);
+          }
+        );
+      });
+    </script>
+    <script>
+      window.addEventListener("DOMContentLoaded", (event) => {
+        ClassicEditor.create(document.querySelector("#description")).catch(
+          (error) => {
+            console.error(error);
+          }
+        );
+      });
+    </script>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", (event) => {
+        ClassicEditor.create(document.querySelector("#benefit")).catch(
+          (error) => {
+            console.error(error);
+          }
+        );
+      });
+    </script>
+    <script>
+      window.addEventListener("DOMContentLoaded", (event) => {
+        ClassicEditor.create(document.querySelector("#theory")).catch(
+          (error) => {
+            console.error(error);
+          }
+        );
+      });
+    </script>
+    <script>
+      window.addEventListener("DOMContentLoaded", (event) => {
+        ClassicEditor.create(document.querySelector("#facility")).catch(
+          (error) => {
+            console.error(error);
+          }
+        );
+      });
+    </script>
+    <script>
+      window.addEventListener("DOMContentLoaded", (event) => {
+        ClassicEditor.create(document.querySelector("#certificate")).catch(
+          (error) => {
+            console.error(error);
+          }
+        );
+      });
+    </script>
+    <script>
+      window.addEventListener("DOMContentLoaded", (event) => {
+        ClassicEditor.create(
+          document.querySelector("#participant_requirement")
+        ).catch((error) => {
+          console.error(error);
         });
       });
     </script>
