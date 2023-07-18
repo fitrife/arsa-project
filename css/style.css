@@ -19,6 +19,7 @@
 :root {
   --main-color: #072646;
   --secondary-color: #4c3181;
+  --tertiary-color: #ffb624;
   --red: #e84545;
   --yellow: #ffc95f;
   --green: #3e7c17;
@@ -324,6 +325,28 @@ h5 {
   border: 1px solid #fff;
 }
 
+.btn-tertiary {
+  background: var(--tertiary-color);
+  color: #fff;
+  border: 1px solid var(--tertiary-color);
+}
+
+.btn-tertiary::before {
+  background: var(--tertiary-color);
+}
+
+.btn-tertiary:active {
+  background: var(--tertiary-color);
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-tertiary:hover {
+  background: #fff;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
 .btn-primary-outline {
   border: 1px solid #072646;
   color: #072646;
@@ -377,6 +400,10 @@ h5 {
 
 .bg-secondary {
   background: #4c3181 !important;
+}
+
+.bg-tertiary {
+  background: var(--tertiary-color) !important;
 }
 
 .bg-dark {
@@ -786,7 +813,7 @@ a.close-chat {
   box-shadow: none;
   border: 1px solid #dadada;
   padding: 5px 20px;
-  height: 44px;
+  height: 48px;
   border-radius: 0;
 }
 .form-title {
@@ -1386,7 +1413,7 @@ header .navbar-light .navbar-nav .nav-link:hover {
 }
 
 .hero-slider .slick-dots li.slick-active button {
-  background: #4c3181;
+  background: var(--main-color) !important;
 }
 
 .hero-slider .slick-dots li button {

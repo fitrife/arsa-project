@@ -4,55 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Administrator | Pusat Pelatihan K3</title>
+    <title>Administrator | Arsa Consultant</title>
 
     <!-- Icon -->
-    <link rel="icon" href="../images/logo.png" type="image/x-icon" />
+    <link rel="icon" href="../img/logo.png" type="image/x-icon" />
 
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
 
-    <!-- Bootstrap -->
+    <!-- CSS only -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <!-- Slick -->
+
     <link
       rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- Animate -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
     <!-- Datatables -->
     <link
       rel="stylesheet"
       type="text/css"
       href="../plugins/datatables/datatables.min.css"
     />
-    <!-- Summernote -->
-    <link rel="stylesheet" href="../plugins/summernote/summernote-lite.css" />
 
-    <!-- Pusat Pelatihan K3 Style -->
+    <!-- Arsa Consultant Style -->
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
@@ -60,7 +54,7 @@
     <div class="sidebar position-fixed top-0 bottom-0 bg-white border-end">
       <div class="d-flex align-items-center p-3">
         <a href="#" class="sidebar-logo">
-          <img src="../images/logo.png" alt="Pusat Pelatihan K3" />
+          <img src="../img/logo.png" alt="Arsa Consultant" />
         </a>
         <i
           class="sidebar-toggle fa-regular fa-circle-left ms-auto fs-5 d-none d-md-block"
@@ -69,35 +63,35 @@
       <ul class="sidebar-menu p-3 m-0 mb-0">
         <li class="sidebar-menu-divider mt-3 mb-1 text-uppercase">Form</li>
         <li class="sidebar-menu-item">
-          <a href="#">
+          <a href="all-messages.html">
             <i class="fa-solid fa-envelope sidebar-menu-item-icon"></i>
             Pesan</a
           >
         </li>
         <!-- <li class="sidebar-menu-divider mt-3 text-uppercase">Custom</li> -->
         <li class="sidebar-menu-item">
-          <a href="#">
+          <a href="all-inhouse.html">
             <i class="fa-solid fa-user-tie sidebar-menu-item-icon"></i> Inhouse
           </a>
         </li>
         <li class="sidebar-menu-item">
-          <a href="#">
+          <a href="all-public.html">
             <i class="fa-solid fa-people-group sidebar-menu-item-icon"></i>
             Public
           </a>
         </li>
         <li class="sidebar-menu-item">
-          <a href="#">
+          <a href="all-kemnaker.html">
             <i class="fa-solid fa-k sidebar-menu-item-icon"></i> Kemnaker
           </a>
         </li>
         <li class="sidebar-menu-item">
-          <a href="#">
+          <a href="all-bnsp.html">
             <i class="fa-solid fa-b sidebar-menu-item-icon"></i> BNSP
           </a>
         </li>
         <li class="sidebar-menu-item">
-          <a href="#">
+          <a href="all-softskill.html">
             <i class="fa-solid fa-s sidebar-menu-item-icon"></i> Softskill
           </a>
         </li>
@@ -108,14 +102,8 @@
             Program</a
           >
         </li>
-        <li class="sidebar-menu-item d-none">
-          <a href="#">
-            <i class="fa-solid fa-rupiah-sign sidebar-menu-item-icon"></i>
-            Biaya
-          </a>
-        </li>
         <li class="sidebar-menu-item active">
-          <a href="#">
+          <a href="all-schedules.html">
             <i class="fa-solid fa-calendar-days sidebar-menu-item-icon"></i>
             Jadwal
           </a>
@@ -123,13 +111,13 @@
 
         <li class="sidebar-menu-divider mt-3 mb-1 text-uppercase">Blog</li>
         <li class="sidebar-menu-item">
-          <a href="#">
+          <a href="all-categories.html">
             <i class="fa-solid fa-rectangle-list sidebar-menu-item-icon"></i>
             Kategori
           </a>
         </li>
         <li class="sidebar-menu-item">
-          <a href="#">
+          <a href="all-articles.html">
             <i class="fa-regular fa-newspaper sidebar-menu-item-icon"></i>
             Artikel
           </a>
@@ -137,7 +125,7 @@
 
         <li class="sidebar-menu-divider mt-3 mb-1 text-uppercase">Staff</li>
         <li class="sidebar-menu-item">
-          <a href="#">
+          <a href="all-staff.html">
             <i class="fa-solid fa-users-rectangle sidebar-menu-item-icon"></i>
             Customer Service
           </a>
@@ -153,20 +141,20 @@
         <!-- navbar start -->
         <nav class="px-3 py-2 bg-white rounded shadow">
           <i class="ri-menu-line sidebar-toggle me-3 d-block d-md-none"></i>
-          <h5 class="fw-bold mb-0 me-auto">
+          <h4 class="fw-bold mb-0 me-auto">
             Edit Jadwal Pelatihan & Pembinaan
-          </h5>
+          </h4>
           <div class="dropdown">
             <div
               class="d-flex align-items-center cursor-pointer dropdown-toggle"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <span class="me-2 d-none d-sm-block">Admin PPK3</span>
+              <span class="me-2 d-none d-sm-block">Administrator</span>
               <img
                 class="navbar-profile-image"
-                src="../images/logo.png"
-                alt="user-img"
+                src="../img/logo.png"
+                alt="Administrator"
               />
             </div>
             <ul class="dropdown-menu">
@@ -202,75 +190,272 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-10">
               <form
-                method="post"
+                method="POST"
                 action="/dashboard/schedules"
                 class="mb-5"
                 enctype="multipart/form-data"
               >
-                <div class="mb-3">
-                  <label for="name" class="form-label">Nama Program</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    name="name"
-                    required
-                    autofocus
-                    value=""
-                  />
+                <input
+                  type="hidden"
+                  name="_token"
+                  value="n596PsHdu3tqRmyyx18I2dm5ObACttnESt5BfHfl"
+                />
+                <div class="d-md-flex pt-2 pb-2 mb-3">
+                  <div class="w-100">
+                    <label for="training" class="form-label"
+                      >Pilih Program Training</label
+                    ><select class="form-select" name="training_id">
+                      <option value="82">
+                        Accident Investigation &amp; Reporting
+                      </option>
+                      <option value="110">Ahli K3 Kimia</option>
+                      <option value="115">Ahli K3 Muda Lingkungan Kerja</option>
+                      <option value="10">Ahli K3 Umum</option>
+                      <option value="56">Ahli K3 Umum BNSP</option>
+                      <option value="8">Ahli Muda K3 Konstruksi</option>
+                      <option value="77">
+                        Analisa Kredit Modal Kerja Dan Stand By Loan
+                      </option>
+                      <option value="35">
+                        ANTI PENCUCIAN UANG &amp; PENCEGAHAN PENDANAAN TERORISME
+                        (APU PPT)
+                      </option>
+                      <option value="23">Audit Internal Keamanan Pangan</option>
+                      <option value="112">Auditor SMK3</option>
+                      <option value="61">Balanced Score Card</option>
+                      <option value="98">BASIC AMDAL</option>
+                      <option value="84">Basic Safety Management</option>
+                      <option value="93">
+                        BOILER ( PENGOPERASIAN BURNER SYSTEM : COAL, MAIN OIL
+                        GUN, TINY OIL GUN )
+                      </option>
+                      <option value="69">Building Corporate Culture</option>
+                      <option value="60">Career Path Management</option>
+                      <option value="80">Coal And Ash Handling</option>
+                      <option value="63">Corporate Plan</option>
+                      <option value="36">
+                        CORPORATE SOCIAL RESPONSIBILITY
+                      </option>
+                      <option value="97">Defensive &amp; Safety Riding</option>
+                      <option value="96">DEFENSIVE DRIVING</option>
+                      <option value="52">Digital Banking</option>
+                      <option value="66">Electrical Power System</option>
+                      <option value="83">Emergency Respon Plan</option>
+                      <option value="78">Export Import Procedure</option>
+                      <option value="75">Facility Management</option>
+                      <option value="67">Finance For Non Finance</option>
+                      <option value="65">Fraud e-Channel</option>
+                      <option value="30">HR Manager</option>
+                      <option value="28">HR Staff</option>
+                      <option value="29">HR Supervisor</option>
+                      <option value="87">HSE Leadership</option>
+                      <option value="95">
+                        Inspeksi &amp; Commisioning Alat Berat
+                      </option>
+                      <option value="27">
+                        Inspeksi Hygine Sanitasi Makanan
+                      </option>
+                      <option value="41">Instruktur Junior</option>
+                      <option value="42">Instruktur Senior</option>
+                      <option value="109">Investigasi Kecelakaan</option>
+                      <option value="73">Job Grading</option>
+                      <option value="9">Juru Las (Welder)</option>
+                      <option value="102">K3 Laboratorium</option>
+                      <option value="111">K3 Rumah Sakit</option>
+                      <option value="88">Keanekaragaman Hayati</option>
+                      <option value="72">
+                        Kupas Tuntas Tata penyusunan Laporan Tata Kelola
+                        Perusahaan (GCG)
+                      </option>
+                      <option value="0" selected="">Lainnya</option>
+                      <option value="79">Lotto</option>
+                      <option value="53">
+                        Managing Office And Filling System
+                      </option>
+                      <option value="38">MANAJEMEN KESEKRETARIATAN</option>
+                      <option value="37">MANAJEMEN RISIKO OPERASIONAL</option>
+                      <option value="55">Masa Persiapan Pensiun</option>
+                      <option value="39">
+                        MOTION GRAPHIC FOR SUPPORTING MEDIA DESIGN
+                      </option>
+                      <option value="43">Operator Alat Berat</option>
+                      <option value="12">Operator Forklift</option>
+                      <option value="44">Operator Gondola</option>
+                      <option value="114">Operator K3 Migas</option>
+                      <option value="45">Operator Manlift</option>
+                      <option value="104">
+                        OPERATOR PENGELOLAAN LIMBAH PADAT NON B3 (OPLNB3)
+                      </option>
+                      <option value="46">
+                        Operator Pita Transport (Conveyor)
+                      </option>
+                      <option value="13">Operator Rigger</option>
+                      <option value="81">Outage Mangement</option>
+                      <option value="118">Paramedis K3 Muda</option>
+                      <option value="19">
+                        Pelaksana Pengelolaan Limbah B3 (OPLB3)
+                      </option>
+                      <option value="70">
+                        Pelaporan Restrukturisasi Kredit Bermasalah
+                      </option>
+                      <option value="89">
+                        Penanganan dan Pengelolaan Limbah Industri untuk PLTU
+                      </option>
+                      <option value="22">
+                        Penanggungjawab Operasional Instalasi Pencemaran Udara
+                        (POIPU)
+                      </option>
+                      <option value="18">
+                        Penanggungjawab Operasional Pengolahan Air Limbah
+                        (POPAL)
+                      </option>
+                      <option value="17">
+                        Penanggungjawab Pengendalian Pencemaran Air (PPPA).
+                      </option>
+                      <option value="21">
+                        Penanggungjawab Pengendalian Pencemaran Udara (PPPU)
+                      </option>
+                      <option value="20">
+                        Penentuan Potensi dan Karakteristik Pencemaran Limbah
+                        (PPPLB3)
+                      </option>
+                      <option value="91">
+                        Penerapan Budaya 5R di Perusahaan
+                      </option>
+                      <option value="116">Pengawas K3 Migas</option>
+                      <option value="57">
+                        Pengawas Operasional Madya (POM)
+                      </option>
+                      <option value="16">
+                        Pengawas Operasional Pertama (POP)
+                      </option>
+                      <option value="58">
+                        Pengawas Operasional Utama (POU)
+                      </option>
+                      <option value="103">
+                        PENGAWAS PENGELOLAAN LIMBAH PADAT NON B3 (PLNB3)
+                      </option>
+                      <option value="31">
+                        Pengawas Sistem Manajemen K3 Kontraktor (CSMS)
+                      </option>
+                      <option value="26">
+                        Pengelolaan Higiene Sanitasi Makanan
+                      </option>
+                      <option value="24">
+                        Pengelolaan Keamanan Pangan Berbasis HACCP
+                      </option>
+                      <option value="71">
+                        Pengelolaan Limbah Cair Dan Optimalisasi IPAL
+                      </option>
+                      <option value="51">
+                        Penjamah Makanan (Food Handler)
+                      </option>
+                      <option value="107">
+                        Penyusunan Analisa Laporan Keuangan Debitur dan Aspek
+                        Hukum Perbankan
+                      </option>
+                      <option value="25">Penyusunan Dokumen HACCP</option>
+                      <option value="64">Penyusunan Rencana Bisnis Bank</option>
+                      <option value="54">
+                        Perencanaan Pemeliharaan Pembangkit
+                      </option>
+                      <option value="15">
+                        Pertolongan Pertama pada Kecelakaan (P3K)
+                      </option>
+                      <option value="106">Pest Control Management</option>
+                      <option value="117">Petugas K3 Kimia</option>
+                      <option value="32">
+                        Petugas Pemadam Kebakaran (Kelas D)
+                      </option>
+                      <option value="49">Petugas Ruang Terbatas Madya</option>
+                      <option value="47">Petugas Ruang Terbatas Resque</option>
+                      <option value="48">Petugas Ruang Terbatas Utama</option>
+                      <option value="76">
+                        Procurement Negotiation &amp; Contracting Strategy
+                      </option>
+                      <option value="105">
+                        Professional Receptionist &amp; Operator
+                      </option>
+                      <option value="74">PSAK DAN ISAK</option>
+                      <option value="33">
+                        RETURN ON TRAINING INVESTMENT (ROTI)
+                      </option>
+                      <option value="86">
+                        Risk Assesment And Job Safety Analysis
+                      </option>
+                      <option value="34">RISK MANAGEMENT</option>
+                      <option value="68">Service Excellent</option>
+                      <option value="62">
+                        Sistem Resi Gudang Untuk Perbankan
+                      </option>
+                      <option value="40">STRATEGI INVESTIGASI OBLIGASI</option>
+                      <option value="113">Supervisor Perancah</option>
+                      <option value="108">
+                        Tata Kelola Surat Berharga Dan Settlement Melalui
+                        BI-SSSS
+                      </option>
+                      <option value="50">
+                        Teknisi K3 Deteksi Gas (Authorized Gas Tester)
+                      </option>
+                      <option value="11">Teknisi K3 Listrik</option>
+                      <option value="14">Teknisi Perancah</option>
+                      <option value="59">Training Need Analysis (TNA)</option>
+                      <option value="85">Water Treatment Plant</option>
+                    </select>
+                  </div>
+                  <div class="w-100">
+                    <label for="name" class="form-label"
+                      >Pilih Lainnya dan Tulis Nama Program</label
+                    ><input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      autofocus=""
+                      value=""
+                    />
+                  </div>
                 </div>
                 <div class="mb-3">
-                  <label for="slug" class="form-label">Slug</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="slug"
-                    name="slug"
-                    required
-                    value=""
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="license" class="form-label"
+                  <label for="trainingcategories" class="form-label"
                     >Sertifikasi <span class="text-danger">*</span></label
-                  >
-                  <select class="form-select" name="license_id">
-                    <option value="Sertifikasi Kemnaker RI">
-                      Sertifikasi Kemnaker RI
-                    </option>
+                  ><select class="form-select" name="training_categories_id">
+                    <option value="1">Sertifikasi Kemnaker RI</option>
+                    <option value="2">Sertifikasi BNSP</option>
+                    <option value="3">Training Softskill</option>
                   </select>
                 </div>
                 <div class="mb-3">
-                  <label for="schedule" class="form-label">Jadwal</label>
-                  <input
-                    type="text"
+                  <label for="schedule"
+                    >Jadwal <span class="text-danger">*</span></label
+                  ><input
+                    type="schedule"
+                    name="schedule"
                     class="form-control"
                     id="schedule"
-                    name="schedule"
-                    required
-                    autofocus
+                    required=""
+                    autofocus=""
                     value=""
                   />
                 </div>
                 <div class="mb-3">
-                  <label for="method" class="form-label">Metode</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="method"
+                  <label for="method"
+                    >Metode <span class="text-danger">*</span></label
+                  ><input
+                    type="method"
                     name="method"
-                    required
-                    autofocus
+                    class="form-control"
+                    required=""
+                    autofocus=""
                     value=""
                   />
                 </div>
                 <div class="d-flex">
                   <button type="submit" class="btn btn-success me-1">
-                    <i class="fa-regular fa-floppy-disk me-1"></i>Simpan
-                  </button>
-                  <button type="reset" class="btn btn-danger">
+                    <i class="fa-regular fa-floppy-disk me-1"></i>Simpan</button
+                  ><button type="reset" class="btn btn-danger">
                     <i class="fa-solid fa-rotate-right me-1"></i>Reset
                   </button>
                 </div>
@@ -281,77 +466,21 @@
         <!-- schedule end -->
       </div>
     </div>
-
     <!-- main wrapper end -->
 
-    <!-- JQuery -->
+    <!-- JavaScript Bundle with Popper -->
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <!-- Slick -->
+
     <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script src="plugins/slick-animation/slick-animation.min.js"></script>
-    <!-- Color Box -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"
-      integrity="sha512-DAVSi/Ovew9ZRpBgHs6hJ+EMdj1fVKE+csL7mdf9v7tMbzM1i4c/jAvHE8AhcKYazlFl7M8guWuO3lDNzIA48A=="
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     ></script>
-    <!-- Shuffle -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"
-      integrity="sha512-DAVSi/Ovew9ZRpBgHs6hJ+EMdj1fVKE+csL7mdf9v7tMbzM1i4c/jAvHE8AhcKYazlFl7M8guWuO3lDNzIA48A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/6.1.0/shuffle.min.js"
-      integrity="sha512-r8mIpk3ypCMwNxH6srRZGbjHQlOFt3Mq2vrZ/iymx6g9JUqTeVavofeX6gbrxAC74X5HmBy5gxyhCm6OiXrM0Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- Pelatihan K3 -->
+    <!-- Custom Script -->
     <script src="../js/script.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      charset="utf8"
-      src="../plugins/datatables/datatables.min.js"
-    ></script>
-    <script src="../plugins/summernote/summernote-lite.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(
-          "#description, #participant_requirement, #theory, #certificate"
-        ).summernote({
-          height: 150,
-          toolbar: [
-            ["style", ["style"]],
-            ["font", ["bold", "underline", "clear"]],
-            ["color", ["color"]],
-            ["para", ["ul", "ol", "paragraph"]],
-            ["table", ["table"]],
-            ["insert", ["link", "picture", "video"]],
-            ["view", ["fullscreen", "codeview", "help"]],
-          ],
-        });
-      });
-    </script>
   </body>
 </html>
