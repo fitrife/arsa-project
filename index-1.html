@@ -39,6 +39,25 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
+    <!-- Slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
@@ -46,7 +65,7 @@
     />
 
     <!-- Custom Style -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-1.css" />
     <link rel="stylesheet" href="css/responsive.css" />
 
     <!-- slick -->
@@ -117,225 +136,139 @@
           >
             <span class="fa fa-bars"></span> Menu
           </button>
+          <form action="#" class="searchform order-lg-last">
+            <div class="form-group d-flex m-auto">
+              <input type="text" class="form-control pl-3" placeholder="Cari" />
+              <button type="submit" placeholder="" class="form-control search">
+                <span class="fa fa-search"></span>
+              </button>
+            </div>
+          </form>
           <div class="collapse navbar-collapse" id="ftco-nav">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav me-auto">
               <li class="nav-item active">
-                <a href="index.html" class="nav-link">Beranda</a>
+                <a href="index-1.html" class="nav-link">Beranda</a>
               </li>
-              <li class="nav-item">
-                <a href="about.html" class="nav-link">Jenis Pelatihan</a>
+              <li class="nav-item dropdown view">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Jenis Pelatihan</a
+                >
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Sertifikasi Kemnaker RI</a>
+                  <a class="dropdown-item" href="#">Sertifikasi BNSP</a>
+                  <a class="dropdown-item" href="#">Softskill</a>
+                </div>
               </li>
               <li class="nav-item">
                 <a href="team.html" class="nav-link">Jadwal Pelatihan</a>
               </li>
-              <li class="nav-item">
-                <a href="project.html" class="nav-link">Pendaftaran</a>
+              <li class="nav-item dropdown view">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Pendaftaran</a
+                >
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Pelatihan Kemnaker RI</a>
+                  <a class="dropdown-item" href="#">Pelatihan BNSP</a>
+                  <a class="dropdown-item" href="#"
+                    >Permohonan Public Training</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    >Permohonan Inhouse Training</a
+                  >
+                </div>
               </li>
               <li class="nav-item">
                 <a href="blog.html" class="nav-link">Blog</a>
               </li>
               <li class="nav-item">
-                <a href="contact.html" class="nav-link">Kontak</a>
+                <a class="nav-link" href="contact-us-1.html">Kontak</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
       <!-- END nav -->
-      <div class="hero-wrap">
-        <div class="home-slider owl-carousel">
-          <div
-            class="slider-item"
-            style="background-image: url(images/bg_1.jpg)"
-          >
-            <div class="overlay"></div>
-            <div class="container">
-              <div
-                class="row no-gutters slider-text align-items-center justify-content-center"
-              >
-                <div class="col-md-12 ftco-animate">
-                  <div class="text w-100 text-center">
-                    <h2>We're here to help you</h2>
-                    <h1 class="mb-3">Home Builder</h1>
-                  </div>
+
+      <!-- Banner start -->
+      <div class="banner-carousel mb-0">
+        <div
+          class="banner-carousel-item"
+          style="background-image: url(img/banner-7.webp)"
+        >
+          <div class="overlay"></div>
+          <div class="slider-content">
+            <div class="container h-100">
+              <div class="row align-items-center h-100">
+                <div class="col-md-12 text-center position-relative">
+                  <h2 class="slide-title" data-animation-in="slideInLeft">
+                    Profesional Sebagai Penyedia
+                  </h2>
+                  <h3 class="slide-sub-title" data-animation-in="slideInRight">
+                    Pelatihan dan Sertifikasi K3
+                  </h3>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div
-            class="slider-item"
-            style="background-image: url(images/bg_2.jpg)"
-          >
-            <div class="overlay"></div>
-            <div class="container">
-              <div
-                class="row no-gutters slider-text align-items-center justify-content-center"
-              >
-                <div class="col-md-12 ftco-animate">
-                  <div class="text w-100 text-center">
-                    <h2>Best Builder in the World</h2>
-                    <h1 class="mb-3">We Build Home</h1>
-                  </div>
+        <div
+          class="banner-carousel-item"
+          style="background-image: url(img/banner-5.webp)"
+        >
+          <div class="overlay"></div>
+          <div class="slider-content text-center">
+            <div class="container h-100">
+              <div class="row align-items-center h-100">
+                <div class="col-md-12">
+                  <h2 class="slide-title" data-animation-in="slideInLeft">
+                    Profesional Sebagai Penyedia
+                  </h2>
+                  <h3 class="slide-sub-title" data-animation-in="slideInRight">
+                    Pelatihan dan Sertifikasi K3
+                  </h3>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div
-            class="slider-item"
-            style="background-image: url(images/bg_3.jpg)"
-          >
-            <div class="overlay"></div>
-            <div class="container">
-              <div
-                class="row no-gutters slider-text align-items-center justify-content-center"
-              >
-                <div class="col-md-12 ftco-animate">
-                  <div class="text w-100 text-center">
-                    <h2>We Build Your Home</h2>
-                    <h1 class="mb-3">Professional Builder</h1>
-                  </div>
+        <div
+          class="banner-carousel-item"
+          style="background-image: url(img/banner-6.webp)"
+        >
+          <div class="overlay"></div>
+          <div class="slider-content text-center">
+            <div class="container h-100">
+              <div class="row align-items-center h-100">
+                <div class="col-md-12">
+                  <h2 class="slide-title" data-animation-in="slideInLeft">
+                    Profesional Sebagai Penyedia
+                  </h2>
+                  <h3 class="slide-sub-title" data-animation-in="slideInRight">
+                    Pelatihan dan Sertifikasi K3
+                  </h3>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- start hero -->
-      <section
-        class="hero overlay bg-cover"
-        data-background="img/banner.png"
-        style
-      >
-        <div class="container">
-          <div class="hero-slider">
-            <!-- slider item -->
-            <div class="hero-slider-item">
-              <div class="row">
-                <div class="col-md-8">
-                  <h1 class="display-4 fw-bolder">
-                    Your bright future is our mission
-                  </h1>
-                  <p class="text-dark mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exer
-                  </p>
-                  <a href="kemnaker.html" class="btn btn-primary">Apply now</a>
-                </div>
-              </div>
-            </div>
-            <!-- slider item -->
-            <div class="hero-slider-item">
-              <div class="row">
-                <div class="col-md-8">
-                  <h1 class="display-4 fw-bolder">
-                    Transformasi Keselamatan Kerja
-                  </h1>
-                  <p class="text-dark mb-4">
-                    Tingkatkan Pengetahuan, Ketrampilan, dan Keamanan, Bersama
-                    Kami Menuju Lingkungan Kerja yang Optimal dan Bebas Risiko.
-                    Investasi pada Keselamatan, Investasi pada Sukses dan
-                    Kesejahteraan
-                  </p>
-                  <a href="bnsp.html" class="btn btn-primary">Apply now</a>
-                </div>
-              </div>
-            </div>
-            <!-- slider item -->
-            <div class="hero-slider-item">
-              <div class="row">
-                <div class="col-md-8">
-                  <h1 class="display-4 fw-bolder">
-                    Your bright future is our mission
-                  </h1>
-                  <p class="text-dark mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exer
-                  </p>
-                  <a href="kemnaker.html" class="btn btn-primary">Apply now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- end hero -->
-
-      <!-- exclusive program start -->
-      <!-- <section class="exclusive-section section-padding">
-        <div class="container">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-lg-6 col-md-8">
-              <div class="exclusive-text">
-                <h1>Program unggulan kami</h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus aliquam sapien sed libero sollicitudin porta.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-9">
-              <div class="row justify-content-center">
-                <div class="owl-carousel exclusive-carousel">
-                  <div class="row exclusive-item box">
-                    <div class="col-lg-4 col-md-12">
-                      <img
-                        src="img/sample.jpg"
-                        class="m-auto"
-                        alt="exclusive-program"
-                      />
-                    </div>
-                    <div class="col-lg-8 col-md-12">
-                      <h3 class="text-capitalize">Lorem ipsum dolor sit</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Phasellus aliquam sapien sed libero sollicitudin porta.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="row exclusive-item box">
-                    <div class="col-lg-4 col-md-12">
-                      <img
-                        src="img/sample.jpg"
-                        class="m-auto"
-                        alt="exclusive-program"
-                      />
-                    </div>
-                    <div class="col-lg-8 col-md-12">
-                      <h3 class="text-capitalize">Lorem ipsum dolor sit</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Phasellus aliquam sapien sed libero sollicitudin porta.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="row exclusive-item box">
-                    <div class="col-lg-4 col-md-12">
-                      <img
-                        src="img/hero.png"
-                        class="m-auto"
-                        alt="exclusive-program"
-                      />
-                    </div>
-                    <div class="col-lg-8 col-md-12">
-                      <h3 class="text-capitalize">Lorem ipsum dolor sit</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Phasellus aliquam sapien sed libero sollicitudin porta.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <!-- exclusive program end -->
+      <!-- Banner end -->
 
       <!-- reason start -->
       <section class="reason-section section-padding">
@@ -362,8 +295,6 @@
               >
                 <div
                   class="accordion-item"
-                  data-bs-toggle="tab"
-                  data-bs-target="#reason-one"
                   type="button"
                   role="tab"
                   aria-controls="reason-one"
@@ -378,7 +309,7 @@
                       aria-expanded="true"
                       aria-controls="collapseOne"
                     >
-                      Accordion Item #1
+                      Visi
                     </button>
                   </h2>
                   <div
@@ -396,15 +327,10 @@
                         ea commodo consequat.
                       </p>
                     </div>
-                    <div class="accordion-img">
-                      <img src="img/gift.png" class="reason-img" alt="" />
-                    </div>
                   </div>
                 </div>
                 <div
                   class="accordion-item"
-                  data-bs-toggle="tab"
-                  data-bs-target="#reason-two"
                   type="button"
                   role="tab"
                   aria-controls="reason-two"
@@ -419,7 +345,7 @@
                       aria-expanded="false"
                       aria-controls="collapseTwo"
                     >
-                      Accordion Item #2
+                      Misi
                     </button>
                   </h2>
                   <div
@@ -437,15 +363,10 @@
                         ea commodo consequat.
                       </p>
                     </div>
-                    <div class="accordion-img">
-                      <img src="img/hero.png" class="reason-img" alt="" />
-                    </div>
                   </div>
                 </div>
                 <div
                   class="accordion-item"
-                  data-bs-toggle="tab"
-                  data-bs-target="#reason-three"
                   type="button"
                   role="tab"
                   aria-controls="reason-three"
@@ -460,7 +381,7 @@
                       aria-expanded="false"
                       aria-controls="collapseThree"
                     >
-                      Accordion Item #3
+                      Keunggulan Kami
                     </button>
                   </h2>
                   <div
@@ -478,13 +399,23 @@
                         ea commodo consequat.
                       </p>
                     </div>
-                    <div class="accordion-img">
-                      <img src="img/gift.png" class="reason-img" alt="" />
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- <div class="col-md-6 d-flex">
+              <div
+                class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end"
+                style="background-image: url(img/banner.png)"
+              >
+                <a
+                  href="https://vimeo.com/45830194"
+                  class="icon-video popup-vimeo d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+            </div> -->
             <div class="col-lg-6 col-md-6 d-md-inline d-none">
               <div
                 class="tab-content d-flex justify-content-center align-items-center h-100"
@@ -495,24 +426,23 @@
                   id="reason-one"
                   role="tabpanel"
                   aria-labelledby="reason-one-tab"
+                  style="
+                    background-image: url('./img/construction-worker-with-hard-hat-sanding-down-wood-piece.jpg');
+                    width: 75%;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    height: 450px;
+                  "
                 >
-                  <img src="img/sample.jpg" class="reason-img" alt="" />
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="reason-two"
-                  role="tabpanel"
-                  aria-labelledby="reason-two-tab"
-                >
-                  <img src="img/sample.jpg" class="reason-img" alt="" />
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="reason-three"
-                  role="tabpanel"
-                  aria-labelledby="reason-three-tab"
-                >
-                  <img src="img/sample.jpg" class="reason-img" alt="" />
+                  <!-- <img src="img/sample.jpg" class="reason-img" alt="" /> -->
+                  <a
+                    href="https://vimeo.com/45830194"
+                    class="icon-video popup-vimeo d-flex justify-content-center align-items-center"
+                    style="margin-left: -40px; margin-top: 45%"
+                  >
+                    <i class="fa-solid fa-play"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -625,9 +555,7 @@
                               non molestie ipsum. Nullam ullamcorper nisi mi,
                               sit amet sagittis.
                             </p>
-                            <a
-                              href="course-single.html"
-                              class="btn btn-primary btn-sm"
+                            <a href="#" class="btn btn-primary btn-sm"
                               >Daftar</a
                             >
                           </div>
@@ -646,9 +574,7 @@
                               non molestie ipsum. Nullam ullamcorper nisi mi,
                               sit amet sagittis.
                             </p>
-                            <a
-                              href="course-single.html"
-                              class="btn btn-primary btn-sm"
+                            <a href="#" class="btn btn-primary btn-sm"
                               >Daftar</a
                             >
                           </div>
@@ -667,9 +593,7 @@
                               non molestie ipsum. Nullam ullamcorper nisi mi,
                               sit amet sagittis.
                             </p>
-                            <a
-                              href="course-single.html"
-                              class="btn btn-primary btn-sm"
+                            <a href="#" class="btn btn-primary btn-sm"
                               >Daftar</a
                             >
                           </div>
@@ -720,9 +644,7 @@
                               non molestie ipsum. Nullam ullamcorper nisi mi,
                               sit amet sagittis.
                             </p>
-                            <a
-                              href="course-single.html"
-                              class="btn btn-primary btn-sm"
+                            <a href="#" class="btn btn-primary btn-sm"
                               >Daftar</a
                             >
                           </div>
@@ -741,9 +663,7 @@
                               non molestie ipsum. Nullam ullamcorper nisi mi,
                               sit amet sagittis.
                             </p>
-                            <a
-                              href="course-single.html"
-                              class="btn btn-primary btn-sm"
+                            <a href="#" class="btn btn-primary btn-sm"
                               >Daftar</a
                             >
                           </div>
@@ -762,9 +682,7 @@
                               non molestie ipsum. Nullam ullamcorper nisi mi,
                               sit amet sagittis.
                             </p>
-                            <a
-                              href="course-single.html"
-                              class="btn btn-primary btn-sm"
+                            <a href="#" class="btn btn-primary btn-sm"
                               >Daftar</a
                             >
                           </div>
@@ -815,9 +733,7 @@
                               non molestie ipsum. Nullam ullamcorper nisi mi,
                               sit amet sagittis.
                             </p>
-                            <a
-                              href="course-single.html"
-                              class="btn btn-primary btn-sm"
+                            <a href="#" class="btn btn-primary btn-sm"
                               >Daftar</a
                             >
                           </div>
@@ -836,9 +752,7 @@
                               non molestie ipsum. Nullam ullamcorper nisi mi,
                               sit amet sagittis.
                             </p>
-                            <a
-                              href="course-single.html"
-                              class="btn btn-primary btn-sm"
+                            <a href="#" class="btn btn-primary btn-sm"
                               >Daftar</a
                             >
                           </div>
@@ -857,9 +771,7 @@
                               non molestie ipsum. Nullam ullamcorper nisi mi,
                               sit amet sagittis.
                             </p>
-                            <a
-                              href="course-single.html"
-                              class="btn btn-primary btn-sm"
+                            <a href="#" class="btn btn-primary btn-sm"
                               >Daftar</a
                             >
                           </div>
@@ -888,7 +800,7 @@
           <div class="row bg-dark section-padding">
             <div class="col-md-4 ms-md-3">
               <h3
-                class="schedule-item-title text-capitalize text-light fs-3 mb-3 mt-2"
+                class="schedule-item-title text-light text-capitalize fs-3 mb-3 mt-2"
               >
                 Jadwal Training Terdekat
               </h3>
@@ -898,10 +810,10 @@
                 dolores facere nihil obcaecati libero accusantium, eius
                 exercitationem qui recusandae totam culpa natus.
               </p>
-              <p class="schedule-direct text-light">
-                Direct Link
+              <a href="#" class="schedule-direct text-tertiary">
+                Lihat Jadwal Lainnya
                 <i class="fa-solid fa-circle-right ms-2"></i>
-              </p>
+              </a>
             </div>
             <div class="col-md-7">
               <div class="row justify-content-center">
@@ -1039,6 +951,7 @@
               <div class="row g-0 d-flex no-wrap">
                 <div class="col-md-8 order-1 order-md-0">
                   <div class="card-body p-3">
+                    <i class="fa fa-quote-left"></i>
                     <p class="card-testimony fw-bold">
                       "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Blanditiis at odit corporis optio possimus perspiciatis
@@ -1069,6 +982,7 @@
               <div class="row g-0 d-flex no-wrap">
                 <div class="col-md-8 order-1 order-md-0">
                   <div class="card-body p-3">
+                    <i class="fa fa-quote-left"></i>
                     <p class="card-testimony fw-bold">
                       "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Blanditiis at odit corporis optio possimus perspiciatis
@@ -1161,7 +1075,7 @@
                       <a class="text-color" href="#">Humanities</a>
                     </li>
                   </ul>
-                  <a href="course-single.html">
+                  <a href="#">
                     <h4 class="card-title">Photography</h4>
                   </a>
                   <p class="card-text mb-4">
@@ -1177,7 +1091,7 @@
 
       <!-- Footer Start -->
       <!-- Footer Start -->
-      <footer id="footer" class="footer bg-light">
+      <footer id="footer" class="footer bg-tertiary">
         <div class="footer-top">
           <div class="container">
             <div class="row justify-content-between">
@@ -1263,94 +1177,6 @@
         <!-- Copyright end -->
       </footer>
       <!-- Footer End -->
-      <!-- <footer class="footer position-relative bg-light">
-        <div class="footer-top">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4 order-md-0">
-                <div class="py-lg-5">
-                  <div class="footer-item">
-                    <div class="footer-brand">
-                      <a href="" class="navbar-brand">
-                        <img src="img/logo.png" alt="arsa consultant" />
-                      </a>
-                    </div>
-                    <div class="footer-address">
-                      <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Magni labore qui dicta 55511
-                      </p>
-                    </div>
-                    <div class="footer-social-media">
-                      <ul
-                        class="sosmed-items d-flex me-5 ms-3 justify-content-between"
-                      >
-                        <li>
-                          <a href="https://www.facebook.com/intansafety"
-                            ><i class="fab fa-facebook icon fs-5"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="https://twitter.com/intansafety_yk?lang=en"
-                            ><i class="fab fa-twitter icon fs-5"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="https://www.instagram.com/intansafetyjogja/"
-                            ><i class="fab fa-instagram icon fs-5"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://id.linkedin.com/company/intansafetyjogja"
-                            ><i class="fab fa-linkedin-in icon fs-5"></i
-                          ></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-8 order-md-1">
-                <div class="row justify-content-end py-lg-5">
-                  <div class="col-md-5 mt-3 mt-md-0">
-                    <div class="footer-item text-start">
-                      <h3 class="fs-3 fw-boldert">
-                        Lorem ipsum dolorsit amet.
-                      </h3>
-                      <p class="text-light">Tentang Kami</p>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-3 col-sm-6 mt-3 mt-md-0">
-                    <div class="footer-item ms-md-5 text-start">
-                      <ul>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Program</a></li>
-                        <li><a href="#">Register</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-3 col-sm-6 mt-3 mt-md-0">
-                    <div class="footer-item text-start">
-                      <ul>
-                        <li><a href="#">Tentang Kami</a></li>
-                        <li><a href="#">FAQ</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom bg-dark">
-          <div class="container">
-            <p class="m-0 py-4 text-center text-light">
-              Copyright &copy;2023 Arsa Consultant
-            </p>
-          </div>
-        </div>
-      </footer> -->
     </div>
 
     <!-- course preview modal start -->
@@ -1400,7 +1226,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- slick -->
+    <!-- Slick -->
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
@@ -1412,6 +1238,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
