@@ -157,8 +157,31 @@ h5 {
      06. =customized bootstrap classes
      ------------------------------------ */
 .container {
-  --bs-gutter-x: 15px;
-  max-width: 1140px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }
 .row {
   --bs-gutter-x: 30px;
@@ -1223,6 +1246,7 @@ header .site-navigation {
      background: var(--bs-light);
    }
  } */
+
 header .navbar-toggler {
   border: none;
 }
@@ -1284,7 +1308,24 @@ header .navbar-light .navbar-nav .nav-link:hover {
   /* color: #fff; */
   color: var(--tertiary-color);
 }
-
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+  text-decoration: none;
+}
+.navbar-toggler:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
@@ -5384,6 +5425,13 @@ nav {
   background: var(--dark-to-main-color) !important;
   z-index: 3;
   padding: 0;
+}
+@media (max-width: 991.98px) {
+  .ftco-navbar-light {
+    position: relative;
+    top: 0;
+    padding: 10px 15px;
+  }
 }
 .social-media {
   display: inline-block;
