@@ -2793,10 +2793,8 @@ header .navbar-light .navbar-nav .nav-link:hover {
   font-size: 16px;
   font-weight: 700;
   position: relative;
-  margin: 0 0 30px;
-  padding-left: 15px;
   text-transform: uppercase;
-  border-left: 3px solid var(--main-color);
+  letter-spacing: 2px;
 }
 
 .sidebar ul.nav-tabs li {
@@ -2823,6 +2821,14 @@ header .navbar-light .navbar-nav .nav-link:hover {
 .sidebar ul.nav-tabs li a:focus,
 .sidebar ul.nav-tabs li a:hover {
   color: var(--secondary-color);
+}
+.blog-content-section .sidebar {
+  width: auto !important;
+}
+.blog-content-section .recent-posts h4 {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: none;
 }
 /* .blog-section .sidebar-right .search-widget .form-control {
   height: 50px;
@@ -2878,7 +2884,10 @@ header .navbar-light .navbar-nav .nav-link:hover {
   transition: 0.3s;
 }
 .blog-section .posts-list .post-img img {
-  transition: 0.5s;
+  transition: var(--trans-05);
+}
+.blog-section .posts-list .post-item:hover .post-img img {
+  transform: scale(1.1);
 }
 
 .blog-section .posts-list .post-date {
@@ -3071,6 +3080,167 @@ header .navbar-light .navbar-nav .nav-link:hover {
   font-size: 14px;
   border-radius: 0;
 }
+.blog-details {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.blog-content .blog-details .post-img {
+  margin: -30px -30px 20px -30px;
+  overflow: hidden;
+}
+
+.blog-content .blog-details .title {
+  font-size: 28px;
+  font-weight: 700;
+  padding: 0;
+  margin: 20px 0 0 0;
+  color: var(--color-secondary);
+}
+
+.blog-content .blog-details .content {
+  margin-top: 20px;
+}
+
+.blog-content .blog-details .content h3 {
+  font-size: 22px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.blog-content .blog-details .content blockquote {
+  overflow: hidden;
+  background-color: rgba(82, 86, 94, 0.06);
+  padding: 60px;
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.blog-content .blog-details .content blockquote p {
+  color: var(--color-default);
+  line-height: 1.6;
+  margin-bottom: 0;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.blog-content .blog-details .content blockquote:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: var(--color-primary);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.blog-content .blog-details .meta-top {
+  margin-top: 20px;
+  color: #6c757d;
+}
+
+.blog-content .blog-details .meta-top ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-content .blog-details .meta-top ul li + li {
+  padding-left: 20px;
+}
+
+.blog-content .blog-details .meta-top i {
+  font-size: 16px;
+  margin-right: 8px;
+  line-height: 0;
+  color: var(--color-primary);
+}
+
+.blog-content .blog-details .meta-top a {
+  color: #6c757d;
+  font-size: 14px;
+  display: inline-block;
+  line-height: 1;
+  transition: 0.3s;
+}
+
+.blog-content .blog-details .meta-top a:hover {
+  color: var(--color-primary);
+}
+
+.blog-content .blog-details .meta-bottom {
+  padding-top: 10px;
+  border-top: 1px solid rgba(82, 86, 94, 0.15);
+}
+
+.blog-content .blog-details .meta-bottom i {
+  color: #838893;
+  display: inline;
+}
+
+.blog-content .blog-details .meta-bottom a {
+  color: rgba(82, 86, 94, 0.8);
+  transition: 0.3s;
+}
+
+.blog-content .blog-details .meta-bottom a:hover {
+  color: var(--color-primary);
+}
+
+.blog-content .blog-details .meta-bottom .cats {
+  list-style: none;
+  display: inline;
+  padding: 0 20px 0 0;
+  font-size: 14px;
+}
+
+.blog-content .blog-details .meta-bottom .cats li {
+  display: inline-block;
+}
+
+.blog-content .blog-details .meta-bottom .tags {
+  list-style: none;
+  display: inline;
+  padding: 0;
+  font-size: 14px;
+}
+
+.blog-content .blog-details .meta-bottom .tags li {
+  display: inline-block;
+}
+
+.blog .blog-details .meta-bottom .tags li + li::before {
+  padding-right: 6px;
+  color: var(--color-default);
+  content: ",";
+}
+
+.blog .blog-details .meta-bottom .share {
+  font-size: 16px;
+}
+
+.blog .blog-details .meta-bottom .share i {
+  padding-left: 5px;
+}
+.tagcloud a {
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 4px 10px;
+  margin-bottom: 7px;
+  margin-right: 4px;
+  border-radius: 4px;
+  color: #000000;
+  border: 1px solid #ccc;
+  font-size: 11px;
+}
+
 /* ----------------------------
      22. =courses page
      ------------------------------ */
