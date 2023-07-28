@@ -135,6 +135,9 @@ h5 {
   font-size: 14px;
   line-height: 24px;
 }
+p {
+  line-height: 1.9;
+}
 ::selection {
   color: var(--WHITE);
   background-color: var(--main-color);
@@ -451,6 +454,10 @@ h5 {
 }
 .section-title {
   margin-bottom: 40px;
+}
+.section-title h3 {
+  font-size: 36px;
+  text-transform: capitalize;
 }
 .section-title .title {
   font-family: "Lato", sans-serif;
@@ -1506,7 +1513,7 @@ header .navbar-light .navbar-nav .nav-link:hover {
   z-index: 1;
 }
 
-.slider-content h2 {
+.slider-content h1 {
   color: var(--tertiary-color);
   letter-spacing: 2px;
   font-weight: 700;
@@ -2830,55 +2837,6 @@ header .navbar-light .navbar-nav .nav-link:hover {
   font-weight: bold;
   text-transform: none;
 }
-/* .blog-section .sidebar-right .search-widget .form-control {
-  height: 50px;
-  border-color: #f0e9ff;
-  border-right-color: rgb(240, 233, 255);
-  font-size: 13px;
-  color: #999999;
-  padding-left: 20px;
-  border-radius: 0;
-  border-right: 0;
-}
-
-.blog-section .sidebar-right .search-widget .form-control:focus,
-.blog-section .sidebar-right .search-widget .form-control:hover {
-  outline: 0;
-  box-shadow: none;
-}
-
-.blog-section .sidebar-right .search-widget .input-group button {
-  cursor: pointer;
-  border-radius: 0;
-}
-
-.recent-posts ul li {
-  border-bottom: 1px solid #dadada;
-  padding-bottom: 15px;
-  margin-bottom: 17px;
-}
-
-.recent-posts .post-info .post-title {
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 20px;
-  margin: 0;
-}
-.recent-posts .post-info .post-title a {
-  color: var(--main-color);
-  display: inline-block;
-  text-decoration: none;
-}
-.recent-posts .post-info .post-title a:focus,
-.recent-posts .post-info .post-title a:hover {
-  color: var(--secondary-color);
-}
-
-.recent-posts .posts-thumbnail img {
-  width: 90px;
-  height: 70px;
-  margin-right: 18px;
-} */
 .blog-section .posts-list .post-item {
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.06);
   transition: 0.3s;
@@ -3244,6 +3202,57 @@ header .navbar-light .navbar-nav .nav-link:hover {
 /* ----------------------------
      22. =courses page
      ------------------------------ */
+.courses-section .courses-list .course-item {
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+.courses-section .courses-list .course-img img {
+  transition: var(--trans-05);
+}
+.courses-section .courses-list .course-item:hover .course-img img {
+  transform: scale(1.1);
+}
+
+.courses-section .courses-list .course-date {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: var(--main-color);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 6px 12px;
+  font-weight: 500;
+}
+
+.courses-section .courses-list .course-content {
+  padding: 30px;
+}
+
+.courses-section .courses-list .course-title {
+  font-size: 24px;
+  line-height: 1.3;
+  transition: 0.3s;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+.page-course-section {
+  padding: 150px 0 80px;
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.page-course-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  opacity: 0.4;
+}
 .courses-page .container-text-btn {
   position: relative;
   display: flex;
