@@ -299,6 +299,38 @@ p {
   padding: 5px 15px;
 }
 
+/* .btn-light {
+  background: transparent;
+  color: var(--white);
+  border-color: var(--white);
+}
+
+.btn-light::before {
+  background: var(--white);
+}
+
+.btn-primary:active {
+  background: var(--white) !important;
+  color: var(--dark-to-main-color);
+}
+
+.btn-primary:active::before {
+  height: 80%;
+}
+
+.btn-primary:hover {
+  background: #05192e;
+  color: #072646;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #072646;
+  border-color: #072646;
+} */
+
 .btn-primary {
   background: #072646;
   color: #fff;
@@ -372,6 +404,26 @@ p {
   background: #fff;
   color: #fff;
   border: 1px solid #fff;
+}
+
+.btn-tertiary-outline {
+  border: 1px solid var(--tertiary-color);
+  color: var(--tertiary-color);
+  background: transparent;
+}
+
+.btn-primary-outline::before {
+  background: #fff;
+}
+
+.btn-primary-outline:hover {
+  background: var(--tertiary-color);
+  color: var(--tertiary-color);
+}
+
+.btn-primary-outline:active {
+  background: var(--tertiary-color);
+  color: #fff;
 }
 
 .btn-primary-outline {
@@ -1467,6 +1519,20 @@ header .navbar-light .navbar-nav .nav-link:hover {
   left: 0;
   background: #f8f8f8;
   opacity: 0.7;
+}
+
+.overlay-dark {
+  position: relative;
+}
+.overlay-dark::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: var(--dark-to-main-color);
+  opacity: 0.9;
 }
 
 /*-- Main slide --*/
@@ -3236,7 +3302,7 @@ header .navbar-light .navbar-nav .nav-link:hover {
   margin-bottom: 15px;
   text-transform: capitalize;
 }
-.page-course-section {
+/* .page-course-section {
   padding: 150px 0 80px;
   height: 350px;
   width: 100%;
@@ -3252,6 +3318,25 @@ header .navbar-light .navbar-nav .nav-link:hover {
   bottom: 0;
   content: "";
   opacity: 0.4;
+} */
+.page-course-section {
+  padding: 150px 0 80px;
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+}
+.page-course-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  opacity: 0.4;
+  background: #000000;
 }
 .courses-page .container-text-btn {
   position: relative;

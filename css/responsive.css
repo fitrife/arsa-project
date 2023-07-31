@@ -57,7 +57,7 @@
     display: none;
   }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-    color: #000000;
+    color: #fdbe34;
   }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover:before {
     visibility: visible;
