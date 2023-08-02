@@ -138,6 +138,9 @@ h5 {
 p {
   line-height: 1.9;
 }
+span {
+  line-height: 1.9;
+}
 ::selection {
   color: var(--WHITE);
   background-color: var(--main-color);
@@ -386,7 +389,7 @@ p {
 
 .btn-tertiary {
   background: var(--tertiary-color);
-  color: #fff;
+  color: var(--dark-to-main-color);
   border: 1px solid var(--tertiary-color);
 }
 
@@ -510,6 +513,12 @@ p {
 .section-title h3 {
   font-size: 36px;
   text-transform: capitalize;
+}
+
+@media (max-width: 991px) {
+  .section-title h3 {
+    font-size: 28px;
+  }
 }
 .section-title .title {
   font-family: "Lato", sans-serif;
@@ -1000,13 +1009,9 @@ textarea.form-control {
 .nav-tabs .nav-link {
   background-color: var(--white);
   text-transform: capitalize;
-  border-color: var(--border-color-2);
-  height: 48px;
-  padding: 5px 12px;
-  margin: 0 5px 10px;
   border-radius: 5px;
   color: var(--black-70);
-  font-size: 16px;
+  font-size: 14px;
   width: 180px;
   border-radius: 50px;
   border-color: var(--main-color);
@@ -1611,7 +1616,7 @@ header .navbar-light .navbar-nav .nav-link:hover {
 
 @media (max-width: 575px) {
   .slide-title {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -1634,8 +1639,9 @@ header .navbar-light .navbar-nav .nav-link:hover {
 
 @media (max-width: 575px) {
   .slide-sub-title {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 38px;
+    line-height: 38px;
+    margin: 0;
   }
 }
 
@@ -2921,7 +2927,7 @@ header .navbar-light .navbar-nav .nav-link:hover {
   background-color: var(--main-color);
   color: #fff;
   text-transform: uppercase;
-  font-size: 13px;
+  /* font-size: 13px; */
   padding: 6px 12px;
   font-weight: 500;
 }
@@ -2931,7 +2937,7 @@ header .navbar-light .navbar-nav .nav-link:hover {
 }
 
 .blog-section .posts-list .post-title {
-  font-size: 24px;
+  /* font-size: 24px; */
   line-height: 1.3;
   transition: 0.3s;
   margin-bottom: 15px;
@@ -2943,7 +2949,7 @@ header .navbar-light .navbar-nav .nav-link:hover {
 }
 
 .blog-section .posts-list .meta span {
-  font-size: 15px;
+  /* font-size: 15px; */
   color: #838893;
 }
 
@@ -5721,6 +5727,10 @@ nav {
   font-size: 30px;
   line-height: 1;
   margin-bottom: 30px;
+}
+.navbar-brand img {
+  width: 250px;
+  max-width: 100%;
 }
 @media (min-width: 992px) {
   .navbar-expand-lg > .container,

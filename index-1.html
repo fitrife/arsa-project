@@ -437,8 +437,10 @@
                 >
                   <!-- <img src="img/sample.jpg" class="reason-img" alt="" /> -->
                   <a
-                    href="https://vimeo.com/45830194"
                     class="icon-video popup-vimeo d-flex justify-content-center align-items-center"
+                    data-bs-toggle="modal"
+                    data-bs-target="#video-modal"
+                    type="button"
                     style="margin-left: -40px; margin-top: 45%"
                   >
                     <i class="fa-solid fa-play"></i>
@@ -484,7 +486,7 @@
                     aria-controls="course-one-tab-pane"
                     aria-selected="true"
                   >
-                    <p>Sertifikasi Kemnaker RI</p>
+                    <span>Sertifikasi Kemnaker RI</span>
                   </div>
                   <div
                     class="nav-link mb-1"
@@ -496,7 +498,7 @@
                     aria-controls="course-two-tab-pane"
                     aria-selected="false"
                   >
-                    <p>Sertifikasi BNSP</p>
+                    <span>Sertifikasi BNSP</span>
                   </div>
                   <div
                     class="nav-link mb-1"
@@ -508,7 +510,7 @@
                     aria-controls="course-three-tab-pane"
                     aria-selected="false"
                   >
-                    <p>Training Softskill</p>
+                    <span>Training Softskill</span>
                   </div>
                 </div>
               </div>
@@ -523,9 +525,9 @@
               >
                 <div class="row bg-light section-padding">
                   <div class="col-md-4 ms-md-3">
-                    <h3 class="course-title text-capitalize fs-3">
+                    <h4 class="course-title text-capitalize fs-3">
                       Sertifikasi Kemnaker RI
-                    </h3>
+                    </h4>
                     <p class="course-count">
                       <i class="fa-solid fa-table-list me-1"></i> 10 Pelatihan
                     </p>
@@ -612,9 +614,9 @@
               >
                 <div class="row bg-light section-padding">
                   <div class="col-md-4 ms-md-3">
-                    <h3 class="course-title text-capitalize fs-3">
+                    <h4 class="course-title text-capitalize fs-3">
                       Sertifikasi BNSP
-                    </h3>
+                    </h4>
                     <p class="course-count">
                       <i class="fa-solid fa-table-list me-1"></i> 20 Pelatihan
                     </p>
@@ -701,9 +703,9 @@
               >
                 <div class="row bg-light section-padding">
                   <div class="col-md-4 ms-md-3">
-                    <h3 class="course-title text-capitalize fs-3">
+                    <h4 class="course-title text-capitalize fs-3">
                       Training Softskill
-                    </h3>
+                    </h4>
                     <p class="course-count">
                       <i class="fa-solid fa-table-list me-1"></i> 30 Pelatihan
                     </p>
@@ -798,19 +800,21 @@
       <section class="schedule-section section-padding">
         <div class="container">
           <div class="row bg-dark section-padding">
-            <div class="col-md-4 ms-md-3">
-              <h3
-                class="schedule-item-title text-light text-capitalize fs-3 mb-3 mt-2"
-              >
-                Jadwal Training Terdekat
-              </h3>
+            <div class="col-md-4 ms-md-3 mb-4">
+              <div class="section-title">
+                <h3
+                  class="schedule-item-title text-light text-capitalize fs-3 mb-3 mt-2"
+                >
+                  Jadwal Training Terdekat
+                </h3>
+              </div>
               <p class="schedule-item-desc text-light">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
                 laudantium soluta minima quibusdam. Numquam quos nobis quaerat
                 dolores facere nihil obcaecati libero accusantium, eius
                 exercitationem qui recusandae totam culpa natus.
               </p>
-              <a href="#" class="schedule-direct text-tertiary">
+              <a href="schedules-1.html" class="schedule-direct text-tertiary">
                 Lihat Jadwal Lainnya
                 <i class="fa-solid fa-circle-right ms-2"></i>
               </a>
@@ -1096,7 +1100,7 @@
           <div class="container">
             <div class="row justify-content-between">
               <div class="col-lg-3 col-md-6 footer-widget footer-about">
-                <h3 class="widget-title">Tentang Kami</h3>
+                <h4 class="widget-title">Tentang Kami</h4>
                 <img
                   loading="lazy"
                   class="footer-logo mb-2"
@@ -1105,26 +1109,27 @@
                   style="width: 175px"
                 />
                 <br />
-                <span>
+                <p>
                   Penyedia pelatihan dan sertifikasi K3 yang berlisensi resmi
                   dari KEMNAKER RI dan BNSP
-                </span>
+                </p>
               </div>
               <!-- Col end -->
 
               <div class="col-lg-3 col-md-6 footer-widget mt-5 mt-md-0">
-                <h3 class="widget-title">Jam Kerja</h3>
+                <h4 class="widget-title">Jam Kerja</h4>
                 <div class="working-hours">
-                  Senin - Jumat:
+                  <span>Senin - Jumat:</span>
                   <span class="text-right">08:00 - 16:30 </span>
                   <br />
-                  Sabtu dan Minggu: <span class="text-right">Tutup</span> <br />
+                  <span>Sabtu dan Minggu: </span>
+                  <span class="text-right">Tutup</span> <br />
                 </div>
               </div>
               <!-- Col end -->
 
               <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
-                <h3 class="widget-title">Pelatihan dan Pembinaan</h3>
+                <h4 class="widget-title">Pelatihan dan Pembinaan</h4>
                 <ul class="list-unstyled">
                   <li class="text-decoration-none">
                     <a href="/sertifikasi-kemnaker-ri"
@@ -1148,7 +1153,7 @@
               <!-- Col end -->
 
               <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
-                <h3 class="widget-title">Informasi Kontak</h3>
+                <h4 class="widget-title">Informasi Kontak</h4>
                 <div class="block-23 mb-3">
                   <ul>
                     <li>
@@ -1241,8 +1246,8 @@
             <div class="ratio ratio-16x9">
               <iframe
                 id="player-1"
-                src="https://www.youtube.com/embed/LWBNRyNCWCQ"
-                title="YouTube video player"
+                src="https://www.youtube.com/embed/wrbqeygx8Z0"
+                title="Intan Safety"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               ></iframe>

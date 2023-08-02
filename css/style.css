@@ -915,9 +915,9 @@ textarea.form-control {
   background-color: var(--white);
   text-transform: capitalize;
   border-color: var(--border-color-2);
-  height: 48px;
+  /* height: 48px;
   padding: 5px 12px;
-  margin: 0 5px 10px;
+  margin: 0 5px 10px; */
   border-radius: 5px;
   color: var(--black-70);
   font-size: 16px;
@@ -4888,7 +4888,6 @@ nav {
   font-weight: 800;
   font-size: 30px;
   line-height: 1;
-  margin-bottom: 30px;
 }
 @media (min-width: 992px) {
   .navbar-expand-lg > .container,
