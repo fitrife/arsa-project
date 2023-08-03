@@ -1143,7 +1143,7 @@ textarea.form-control {
 }
 
 .slide-title {
-  font-size: 30px;
+  /* font-size: 30px; */
   line-height: 36px;
   font-weight: 300;
   color: var(--white);
@@ -1152,7 +1152,7 @@ textarea.form-control {
 
 .slide-sub-title {
   font-style: normal;
-  font-size: 60px;
+  /* font-size: 60px; */
   line-height: 58px;
   margin: 20px 0;
   color: var(--white);
@@ -1293,6 +1293,12 @@ textarea.form-control {
   padding-right: 160px;
   line-height: 1.5;
 }
+@media (max-width: 767px) {
+  .about-section .accordion-button {
+    padding-left: 10px;
+    padding-right: 25px;
+  }
+}
 .about-section .accordion-button:focus {
   box-shadow: none;
 }
@@ -1367,7 +1373,6 @@ textarea.form-control {
 /* ---------------------------
      21. =schedule
      ---------------------------- */
-
 .schedule-section .schedule-carousel .owl-dots {
   display: flex;
   justify-content: center;
@@ -1538,16 +1543,221 @@ textarea.form-control {
 .working-hours {
   padding-right: 10px;
 }
-
 .working-hours .text-right {
   float: right;
 }
 .footer-bottom {
-  background: var(--dark-to-main-color);
-  color: #111;
   padding: 25px 0;
   position: relative;
   z-index: 1;
   font-weight: 600;
   font-size: 12px;
+}
+
+/* ----------------------------
+     25. =page title 
+     ------------------------------ */
+.page-title-section {
+  padding: 150px 0 80px;
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  background-attachment: fixed;
+}
+.page-title-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  opacity: 0.4;
+  background: #000000;
+}
+
+/* ----------------------------
+     26. =course page 
+     ------------------------------ */
+.courses-section .courses-list .course-item {
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+.courses-section .courses-list .course-img img {
+  transition: var(--trans-05);
+}
+.courses-section .courses-list .course-item:hover .course-img img {
+  transform: scale(1.1);
+}
+
+.courses-section .courses-list .course-content {
+  padding: 30px;
+}
+
+.courses-section .courses-list .course-title {
+  font-size: 24px;
+  line-height: 1.3;
+  transition: 0.3s;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+/* ----------------------------
+     27. =course detail page 
+     ------------------------------ */
+.overlay-dark {
+  position: relative;
+}
+.overlay-dark::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: var(--dark-to-main-color);
+  opacity: 0.9;
+}
+
+/* ----------------------------
+     28. =blog page 
+     ------------------------------ */
+.blog-section .posts-list .post-item {
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+.blog-section .posts-list .post-img img {
+  transition: var(--trans-05);
+}
+.blog-section .posts-list .post-item:hover .post-img img {
+  transform: scale(1.1);
+}
+.blog-section .posts-list .post-date {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: var(--main-color);
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 6px 12px;
+  font-weight: 500;
+}
+.blog-section .posts-list .post-content {
+  padding: 30px;
+}
+
+.blog-section .posts-list .post-title {
+  line-height: 1.3;
+  transition: 0.3s;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+.blog-section .posts-list .meta i {
+  color: #838893;
+}
+.blog-section .posts-list .meta span {
+  /* font-size: 15px; */
+  color: #838893;
+}
+
+.blog-section .posts-list p {
+  margin-top: 20px;
+}
+
+.blog-section .posts-list hr {
+  color: #888;
+  margin-bottom: 20px;
+}
+
+/* ----------------------------
+     29. =blog post page 
+     ------------------------------ */
+.blog-content-section .sidebar {
+  width: auto !important;
+}
+.blog-content-section .recent-posts h4 {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: none;
+}
+.blog-section .posts-list .post-item {
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+.post {
+  border-bottom: 1px solid #dadada;
+  padding: 0 0 30px;
+  margin: 0 0 45px;
+}
+.post-body {
+  padding: 20px 0;
+}
+.post-meta {
+  padding-bottom: 10px;
+}
+.post-meta span {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #dadada;
+  line-height: 12px;
+  display: inline-block;
+}
+.post-meta span a {
+  text-decoration: none;
+  color: var(--primary);
+}
+.post-meta i {
+  color: #bbb;
+  margin-right: 3px;
+}
+.post-meta .post-date {
+  border-right: 0;
+}
+.blog-content-section .sidebar {
+  width: auto !important;
+}
+.blog-content-section .recent-posts h4 {
+  /* font-size: 15px; */
+  font-weight: bold;
+  text-transform: none;
+}
+.sidebar .widget-title {
+  /* font-size: 16px; */
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.sidebar ul.nav-tabs li {
+  color: #303030;
+  line-height: normal;
+}
+.sidebar ul.nav-tabs li {
+  width: 100%;
+}
+
+.sidebar ul.nav-tabs li a {
+  color: var(--main-color);
+  border-radius: 0;
+  padding: 15px 0;
+  padding-left: 0px;
+  padding-left: 0;
+  font-weight: 400;
+  border-bottom: 1px solid #ddd;
+  display: block;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.blog-content-section .tagcloud a {
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 4px 10px;
+  margin-bottom: 7px;
+  margin-right: 4px;
+  border-radius: 4px;
+  color: #000000;
+  border: 1px solid #ccc;
+  font-size: 11px;
 }
