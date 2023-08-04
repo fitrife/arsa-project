@@ -1758,10 +1758,7 @@ textarea.form-control {
   border-right: 1px solid #dadada;
   line-height: 12px;
   display: inline-block;
-}
-.post-meta span a {
-  text-decoration: none;
-  color: var(--primary);
+  color: #838893;
 }
 .post-meta i {
   color: #bbb;
