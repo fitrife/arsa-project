@@ -1656,7 +1656,26 @@ textarea.form-control {
   background: var(--dark-to-main-color);
   opacity: 0.9;
 }
+.course-detail-section .list-styled {
+  padding-left: 25px;
+  margin-top: 10px;
+}
 
+.course-detail-section .list-styled li {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.course-detail-section .list-styled li::before {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background: var(--dark-to-main-color);
+  left: -15px;
+  top: 10px;
+}
 /* ----------------------------
      28. =blog page 
      ------------------------------ */
