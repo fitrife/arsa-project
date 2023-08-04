@@ -1585,7 +1585,7 @@ textarea.form-control {
      25. =page title 
      ------------------------------ */
 .page-title-section {
-  padding: 150px 0 80px;
+  padding: 120px 0 80px;
   height: 350px;
   width: 100%;
   background-size: cover;
@@ -1593,6 +1593,16 @@ textarea.form-control {
   background-position: top center;
   position: relative;
   background-attachment: fixed;
+}
+@media (max-width: 991px) {
+  .page-title-section {
+    padding: 100px 0 50px;
+  }
+}
+@media (max-width: 575px) {
+  .page-title-section {
+    padding: 70px 0 30px;
+  }
 }
 .page-title-section .overlay {
   position: absolute;
