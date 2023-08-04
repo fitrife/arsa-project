@@ -251,6 +251,20 @@ img {
   transform-origin: bottom;
 }
 
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+}
+.btn-lg-square {
+  width: 48px;
+  height: 48px;
+}
+
 .btn-primary {
   background: var(--dark-to-main-color);
   color: var(--white);
@@ -1313,6 +1327,19 @@ textarea.form-control {
   border-bottom: 1px solid var(--border-color-1);
   transition: none;
   box-shadow: none;
+}
+.about-section .icon-video {
+  width: 80px;
+  height: 80px;
+  background: var(--tertiary-color);
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+  border-radius: 50%;
+}
+@media (min-width: 768px) {
+  .about-section .icon-video {
+    margin-right: -35px;
+  }
 }
 /* ---------------------------
      20. =course
