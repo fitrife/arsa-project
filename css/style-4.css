@@ -13,7 +13,6 @@
 07. =background
 08. =text
 09. =section - padding , title, wrapper
-10. =register
 10. =whatsapp
 11. =forms
 12. =video modal
@@ -37,8 +36,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 /* ----------------------------
- 02. =variables
- ------------------------------ */
+  02. =variables
+  ------------------------------ */
 :root {
   /* =colors */
   --main-color: var(--dark-to-main-color);
@@ -69,8 +68,8 @@
 }
 
 /* ----------------------------
-   03. =base
-   ------------------------------ */
+    03. =base
+    ------------------------------ */
 html,
 body {
   position: relative;
@@ -156,8 +155,8 @@ img {
   width: 100%;
 }
 /* ----------------------------
-     04. =box
-     ------------------------------ */
+      04. =box
+      ------------------------------ */
 .box {
   box-shadow: var(--shadow-black-100);
   margin: 5px;
@@ -170,41 +169,41 @@ img {
 }
 
 /* ----------------------------------
-     05. =customized bootstrap classes
-     ------------------------------------ */
+      05. =customized bootstrap classes
+      ------------------------------------ */
 /* .container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-} */
+   width: 100%;
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+ }
+ @media (min-width: 576px) {
+   .container {
+     max-width: 540px;
+   }
+ }
+ @media (min-width: 768px) {
+   .container {
+     max-width: 720px;
+   }
+ }
+ @media (min-width: 992px) {
+   .container {
+     max-width: 960px;
+   }
+ }
+ @media (min-width: 1200px) {
+   .container {
+     max-width: 1140px;
+   }
+ } */
 .row {
   --bs-gutter-x: 30px;
 }
 /* ------------------------------
-     06. =button
-     -------------------------------- */
+      06. =button
+      -------------------------------- */
 .btn {
   /* font-size: 16px; */
   font-family: "Lato", sans-serif;
@@ -382,8 +381,8 @@ img {
 }
 
 /* ------------------------------
-     07. =background
-     -------------------------------- */
+      07. =background
+      -------------------------------- */
 .bg-success {
   background-color: var(--main-color);
 }
@@ -411,8 +410,8 @@ img {
 }
 
 /* ------------------------------
-     08. =text
-     -------------------------------- */
+      08. =text
+      -------------------------------- */
 .text-success {
   color: var(--main-color) !important;
 }
@@ -427,8 +426,8 @@ img {
 }
 
 /* ------------------------------
-     09. =section - padding , title, wrapper
-     -------------------------------- */
+      09. =section - padding , title, wrapper
+      -------------------------------- */
 .section-padding {
   padding: 60px 0;
 }
@@ -437,29 +436,8 @@ img {
 }
 
 /* ------------------------------
-   10. =floating register
-   -------------------------------- */
-button.blantershow-register {
-  background: var(--tertiary-color);
-  color: var(--dark-to-main-color);
-  position: fixed;
-  z-index: 98;
-  bottom: 25px;
-  left: 30px;
-  font-size: 15px;
-  padding: 10px 20px;
-  border-radius: 30px;
-  box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
-  border: 0;
-}
-@media (max-width: 575px) {
-  button.blantershow-register {
-    left: 10px;
-  }
-}
-/* ------------------------------
-   10. =whatsapp
-   -------------------------------- */
+    10. =whatsapp
+    -------------------------------- */
 .fa-whatsapp:before {
   color: var(--WHITE);
 }
@@ -489,26 +467,10 @@ a.blantershow-chat {
   border-radius: 30px;
   box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
 }
-
 a.blantershow-chat i {
   transform: scale(1.2);
   margin: 0 10px 0 0;
   color: var(--white);
-}
-@media (max-width: 575px) {
-  a.blantershow-chat {
-    /* background: var(--white); */
-    padding: 15px 20px;
-    box-shadow: 0;
-    bottom: 25px;
-    font-size: 16px;
-    right: 10px;
-  }
-  a.blantershow-chat i {
-    transform: scale(2.5);
-    color: var(--white);
-    margin: 0;
-  }
 }
 .header-chat {
   background: #23ab23;
@@ -687,8 +649,8 @@ a.close-chat {
 }
 
 /* ----------------------------
-     11. =forms
-     ------------------------------ */
+      11. =forms
+      ------------------------------ */
 .form-control {
   box-shadow: none;
   border: 1px solid #dadada;
@@ -741,8 +703,8 @@ textarea.form-control {
 }
 
 /* ----------------------------
-     12. =video modal
-     ------------------------------ */
+      12. =video modal
+      ------------------------------ */
 .video-modal .btn-close {
   height: 35px;
   width: 35px;
@@ -761,8 +723,8 @@ textarea.form-control {
 }
 
 /* ----------------------------
-     13. =pagination
-     ------------------------------ */
+      13. =pagination
+      ------------------------------ */
 .page-item.disabled .page-link,
 .page-link {
   border: none;
@@ -778,8 +740,8 @@ textarea.form-control {
 }
 
 /* ----------------------------
-     14. =breadcrumb
-     ------------------------------ */
+      14. =breadcrumb
+      ------------------------------ */
 .breadcrumb-nav {
   padding: 10px 0;
 }
@@ -792,8 +754,8 @@ textarea.form-control {
 }
 
 /* ----------------------------
-     15. =tabs
-     ------------------------------ */
+      15. =tabs
+      ------------------------------ */
 .nav-tabs .nav-link {
   background-color: var(--white);
   text-transform: capitalize;
@@ -817,8 +779,8 @@ textarea.form-control {
 }
 
 /* ----------------------------
-     16. =owl carousel
-     ------------------------------ */
+      16. =owl carousel
+      ------------------------------ */
 .owl-carousel .owl-item {
   opacity: 0.4;
 }
@@ -876,8 +838,8 @@ textarea.form-control {
 }
 
 /* ----------------------------
-     17. =header
-     ------------------------------ */
+      17. =header
+      ------------------------------ */
 .top-bar {
   padding: 8px 0;
   background: var(--tertiary-color);
@@ -1014,15 +976,15 @@ textarea.form-control {
   }
 }
 /* @media (min-width: 1200px) {
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 45px 0px;
-  }
-}
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 20px;
-  }
-} */
+   .navbar-expand-lg .navbar-nav .nav-link {
+     padding: 45px 0px;
+   }
+ }
+ @media (min-width: 992px) {
+   .navbar-expand-lg .navbar-nav .nav-link {
+     padding: 20px;
+   }
+ } */
 .navbar .dropdown:hover .dropdown-menu {
   visibility: visible;
   opacity: 1;
@@ -1219,8 +1181,8 @@ textarea.form-control {
 }
 
 /* ----------------------------
-     18. =banner section
-     ------------------------------ */
+      18. =banner section
+      ------------------------------ */
 .banner-carousel .banner-carousel-item {
   height: 700px;
   color: var(--white);
@@ -1372,8 +1334,8 @@ textarea.form-control {
 }
 
 /* ----------------------------
-     19. =about
-     ------------------------------ */
+      19. =about
+      ------------------------------ */
 .about-section .about-item .about-item-content {
   padding: 10px 5px;
 }
@@ -1457,8 +1419,8 @@ textarea.form-control {
   }
 }
 /* ---------------------------
-     20. =course
-     ---------------------------- */
+      20. =course
+      ---------------------------- */
 .course-section .nav-tabs .nav-link {
   border-color: none;
   display: inline-block;
@@ -1513,8 +1475,8 @@ textarea.form-control {
 }
 
 /* ---------------------------
-     21. =schedule
-     ---------------------------- */
+      21. =schedule
+      ---------------------------- */
 .schedule-section .schedule-carousel .owl-dots {
   display: flex;
   justify-content: center;
@@ -1523,8 +1485,8 @@ textarea.form-control {
   background-color: var(--tertiary-color);
 }
 /* ----------------------------
-     22. =facility
-     ------------------------------ */
+      22. =facility
+      ------------------------------ */
 .facility-section .facility-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1611,8 +1573,8 @@ textarea.form-control {
 }
 
 /* ----------------------------
-     23. =testimony 
-     ------------------------------ */
+      23. =testimony 
+      ------------------------------ */
 .testimony-section .owl-carousel.testimony-carousel .owl-dots {
   display: flex;
   justify-content: center;
@@ -1650,8 +1612,8 @@ textarea.form-control {
 }
 
 /* ----------------------------
-     24. =footer 
-     ------------------------------ */
+      24. =footer 
+      ------------------------------ */
 .footer-top {
   padding: 80px 0 60px;
 }
@@ -1697,8 +1659,8 @@ textarea.form-control {
 }
 
 /* ----------------------------
-     25. =page title 
-     ------------------------------ */
+      25. =page title 
+      ------------------------------ */
 .page-title-section {
   padding: 120px 0 80px;
   height: 350px;
@@ -1731,8 +1693,8 @@ textarea.form-control {
 }
 
 /* ----------------------------
-     26. =course page 
-     ------------------------------ */
+      26. =course page 
+      ------------------------------ */
 .courses-section .courses-list .course-item {
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.06);
   transition: 0.3s;
@@ -1756,8 +1718,8 @@ textarea.form-control {
   text-transform: capitalize;
 }
 /* ----------------------------
-     27. =course detail page 
-     ------------------------------ */
+      27. =course detail page 
+      ------------------------------ */
 .overlay-dark {
   position: relative;
 }
@@ -1792,34 +1754,8 @@ textarea.form-control {
   top: 10px;
 }
 /* ----------------------------
-     28. =blog page 
-     ------------------------------ */
-.blog-section .post {
-  border-bottom: 1px solid #dadada;
-  padding: 0 0 30px;
-  margin: 0 0 45px;
-}
-.blog-section .post-body {
-  padding: 20px 0;
-}
-.blog-section .post-meta {
-  padding-bottom: 10px;
-}
-.blog-section .post-meta span {
-  margin-right: 10px;
-  padding-right: 10px;
-  border-right: 1px solid #dadada;
-  line-height: 12px;
-  display: inline-block;
-  color: #838893;
-}
-.blog-section .post-meta i {
-  color: #bbb;
-  margin-right: 3px;
-}
-.post-meta .post-date {
-  border-right: 0;
-}
+      28. =blog page 
+      ------------------------------ */
 .blog-section .posts-list .post-item {
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.06);
   transition: 0.3s;
@@ -1830,12 +1766,32 @@ textarea.form-control {
 .blog-section .posts-list .post-item:hover .post-img img {
   transform: scale(1.1);
 }
+.blog-section .posts-list .post-date {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: var(--main-color);
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 6px 12px;
+  font-weight: 500;
+}
+.blog-section .posts-list .post-content {
+  padding: 30px;
+}
 
 .blog-section .posts-list .post-title {
   line-height: 1.3;
   transition: 0.3s;
   margin-bottom: 15px;
   text-transform: capitalize;
+}
+.blog-section .posts-list .meta i {
+  color: #838893;
+}
+.blog-section .posts-list .meta span {
+  /* font-size: 15px; */
+  color: #838893;
 }
 
 .blog-section .posts-list p {
@@ -1847,21 +1803,9 @@ textarea.form-control {
   margin-bottom: 20px;
 }
 
-.blog-section .tagcloud a {
-  text-transform: uppercase;
-  display: inline-block;
-  padding: 4px 10px;
-  margin-bottom: 7px;
-  margin-right: 4px;
-  border-radius: 4px;
-  color: #000000;
-  border: 1px solid #ccc;
-  font-size: 11px;
-}
-
 /* ----------------------------
-     29. =blog post page 
-     ------------------------------ */
+      29. =blog post page 
+      ------------------------------ */
 .blog-content-section .sidebar {
   width: auto !important;
 }

@@ -65,151 +65,164 @@
   </head>
   <body>
     <div class="main-wrapper">
-      <!-- header start -->
-      <header>
-        <div class="container pt-3 pb-3">
-          <div class="row justify-content-between">
-            <div class="col">
-              <a class="navbar-brand" href="index-3.html"
-                ><img src="img/company-logo.png" alt="arsa consultant"
-              /></a>
-            </div>
-            <div class="col d-flex justify-content-end align-items-center">
-              <div class="social-media">
-                <p class="mb-0 d-flex">
-                  <a
-                    href="#"
-                    class="d-flex align-items-center justify-content-center"
-                    ><i class="fa-brands fa-facebook-f"></i
-                  ></a>
-                  <a
-                    href="#"
-                    class="d-flex align-items-center justify-content-center"
-                    ><i class="fa-brands fa-twitter"></i
-                  ></a>
-                  <a
-                    href="#"
-                    class="d-flex align-items-center justify-content-center"
-                    ><i class="fa-brands fa-instagram"></i
-                  ></a>
-                  <a
-                    href="#"
-                    class="d-flex align-items-center justify-content-center"
-                    ><i class="fa-brands fa-linkedin-in"></i
-                  ></a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <nav
-          class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark navbar-light"
-          id="navbar"
-        >
-          <div class="container ps-0 pe-0">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#nav"
-              aria-controls="nav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <i class="fa-solid fa-bars me-1"></i> Menu
-            </button>
-            <form
-              action="#"
-              class="searchform order-lg-last d-none d-lg-inline"
-            >
-              <div class="form-group d-flex m-auto">
-                <input
-                  type="text"
-                  class="form-control pl-3"
-                  placeholder="Cari"
-                />
-                <button
-                  type="submit"
-                  placeholder=""
-                  class="form-control search"
-                >
-                  <span class="fa fa-search"></span>
-                </button>
-              </div>
-            </form>
-            <div class="collapse navbar-collapse" id="nav">
-              <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                  <a href="index-3.html" class="nav-link">Beranda</a>
-                </li>
-                <li class="nav-item dropdown view">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >Jenis Pelatihan</a
+      <!-- Topbar start -->
+      <div id="top-bar" class="top-bar d-lg-block d-none">
+        <div class="container">
+          <div class="row">
+            <div class="top-info col-xl-6 col-lg-4 m-auto">
+              <ul class="list-unstyled text-center text-md-start">
+                <li>
+                  <span class="fw-bold d-flex align-items-center"
+                    ><i class="fa-solid fa-clock pb-1"></i> Senin - Jumat: 08.00
+                    - 16.30</span
                   >
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="courses-3.html"
-                      >Sertifikasi Kemnaker RI</a
-                    >
-                    <a class="dropdown-item" href="courses-3.html"
-                      >Sertifikasi BNSP</a
-                    >
-                    <a class="dropdown-item" href="courses-3.html">Softskill</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a href="schedules-3.html" class="nav-link"
-                    >Jadwal Pelatihan</a
-                  >
-                </li>
-                <li class="nav-item dropdown view active">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >Pendaftaran</a
-                  >
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item active" href="kemnaker-3.html"
-                      >Pelatihan Kemnaker RI</a
-                    >
-                    <a class="dropdown-item" href="bnsp-3.html"
-                      >Pelatihan BNSP</a
-                    >
-                    <a class="dropdown-item" href="softskill-3.html"
-                      >Pelatihan Softskill</a
-                    >
-                    <a class="dropdown-item" href="public-3.html"
-                      >Permohonan Public Training</a
-                    >
-                    <a class="dropdown-item" href="inhouse-3.html"
-                      >Permohonan Inhouse Training</a
-                    >
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a href="blog-3.html" class="nav-link">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact-us-3.html">Kontak</a>
                 </li>
               </ul>
             </div>
+            <!--/ Top info end -->
+            <div class="top-contact col-xl-6 col-lg-8 m-auto">
+              <ul class="list-unstyled text-end">
+                <li>
+                  <span class="fw-bold d-flex align-items-center"
+                    ><i class="fa-solid fa-phone pb-1"></i> 0274 4297535</span
+                  >
+                </li>
+                <li>
+                  <span class="fw-bold d-flex align-items-center"
+                    ><i class="fa-solid fa-envelope pb-1"></i>
+                    cs@arsaconsultant.com</span
+                  >
+                </li>
+                <li>
+                  <a href="" class="btn btn-primary fw-bold">
+                    Konsultasi Layanan
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--/ Top social end -->
           </div>
-        </nav>
+          <!--/ Content row end -->
+        </div>
+        <!--/ Container end -->
+      </div>
+      <!-- Topbar end -->
+      <!-- Header start -->
+      <header id="header" class="header bg-dark">
+        <div class="site-navigation">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light p-md-3 p-2">
+                  <div class="logo">
+                    <a class="navbar-brand" href="index-3.html"
+                      ><img
+                        src="img/company-logo-white.png"
+                        alt="arsa consultant"
+                    /></a>
+                  </div>
+                  <!-- logo end -->
+
+                  <button
+                    class="navbar-toggler text-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse"
+                    aria-controls="navbar-collapse"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    Menu
+                    <i class="fa-solid fa-bars text-white"></i>
+                  </button>
+
+                  <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a href="index-3.html" class="nav-link">Beranda</a>
+                      </li>
+                      <li class="nav-item dropdown view">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          href="#"
+                          id="navbarDropdown"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          >Jenis Pelatihan</a
+                        >
+                        <div
+                          class="dropdown-menu"
+                          aria-labelledby="navbarDropdown"
+                        >
+                          <a class="dropdown-item" href="courses-3.html"
+                            >Sertifikasi Kemnaker RI</a
+                          >
+                          <a class="dropdown-item" href="courses-3.html"
+                            >Sertifikasi BNSP</a
+                          >
+                          <a class="dropdown-item" href="courses-3.html"
+                            >Softskill</a
+                          >
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a href="schedules-3.html" class="nav-link"
+                          >Jadwal Pelatihan</a
+                        >
+                      </li>
+                      <li class="nav-item dropdown view">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          href="#"
+                          id="navbarDropdown"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          >Pendaftaran</a
+                        >
+                        <div
+                          class="dropdown-menu"
+                          aria-labelledby="navbarDropdown"
+                        >
+                          <a class="dropdown-item" href="kemnaker-3.html"
+                            >Pelatihan Kemnaker RI</a
+                          >
+                          <a class="dropdown-item" href="bnsp-3.html"
+                            >Pelatihan BNSP</a
+                          >
+                          <a class="dropdown-item" href="softskill-3.html"
+                            >Pelatihan Softskill</a
+                          >
+                          <a class="dropdown-item" href="public-3.html"
+                            >Permohonan Public Training</a
+                          >
+                          <a class="dropdown-item" href="inhouse-3.html"
+                            >Permohonan Inhouse Training</a
+                          >
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a href="blog-3.html" class="nav-link">Blog</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact-us-3.html">Kontak</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+              <!--/ Col end -->
+            </div>
+            <!--/ Row end -->
+          </div>
+          <!--/ Container end -->
+        </div>
+        <!--/ Navigation end -->
       </header>
-      <!-- END nav -->
-      <!-- header end -->
+      <!-- Header end -->
 
       <!-- page title -->
       <section
@@ -363,33 +376,6 @@
                       </div>
                     </div>
                     <div class="d-md-flex pt-2 pb-2 mb-2">
-                      <div class="education w-100 mb-2 mb-md-0">
-                        <label for="education" class="form-label">
-                          Jenjang Pendidikan Terakhir
-                          <span class="text-danger">*</span></label
-                        >
-                        <select class="form-select" name="education_id">
-                          <option value="1">SMA / SMK</option>
-                          <option value="2">D3</option>
-                          <option value="3">D4 / S1</option>
-                          <option value="4">S2</option>
-                          <option value="5">S3</option>
-                        </select>
-                      </div>
-                      <div class="job w-100">
-                        <label for="job" class="form-label"
-                          >Status Pekerjaan
-                          <span class="text-danger">*</span></label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="job"
-                          name="job"
-                          required=""
-                          value=""
-                        />
-                      </div>
                       <div class="company w-100">
                         <label for="company" class="form-label"
                           >Asal Perusahaan</label
@@ -415,63 +401,6 @@
                         value=""
                         placeholder="Khusus bagi yang sedang bekerja"
                       ></textarea>
-                    </div>
-                    <div class="mb-2">
-                      <label for="company_messenger" class="form-label"
-                        >Apakah Anda termasuk utusan perusahaan ?</label
-                      >
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="company_messenger"
-                          id="ya"
-                          value="Ya"
-                        />
-                        <label class="form-check-label" for="ya">Ya</label>
-                      </div>
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="company_messenger"
-                          id="bukan"
-                          value="Bukan"
-                        />
-                        <label class="form-check-label" for="bukan"
-                          >Bukan</label
-                        >
-                      </div>
-                    </div>
-                    <div class="mb-2">
-                      <label for="have_attended_training" class="form-label"
-                        >Apakah Anda pernah mengikuti Program Pelatihan K3
-                        ?</label
-                      >
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="have_attended_training"
-                          id="pernah"
-                          value="Pernah"
-                        />
-                        <label class="form-check-label" for="pernah"
-                          >Pernah</label
-                        >
-                      </div>
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="have_attended_training"
-                          id="belum"
-                          value="Belum Pernah"
-                        />
-                        <label class="form-check-label" for="belum"
-                          >Belum Pernah</label
-                        >
-                      </div>
                     </div>
                     <div class="mb-3">
                       <label for="program" class="form-label"
