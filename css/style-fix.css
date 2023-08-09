@@ -435,7 +435,6 @@ img {
 .section-title {
   margin-bottom: 40px;
 }
-
 /* ------------------------------
    10. =floating register
    -------------------------------- */
@@ -1733,6 +1732,7 @@ textarea.form-control {
 /* ----------------------------
      26. =course page 
      ------------------------------ */
+/* theme-3 start */
 .courses-section .courses-list .course-item {
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.06);
   transition: 0.3s;
@@ -1755,9 +1755,62 @@ textarea.form-control {
   margin-bottom: 15px;
   text-transform: capitalize;
 }
+/* theme-3 end */
+/* theme-4 start */
+.courses-section .search-input {
+  position: relative;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: #f2f1f8;
+  padding-left: 22px;
+}
+.courses-section .search-btn {
+  padding: 0px 40px;
+}
+.courses-section .course-intro {
+  padding-left: 50px;
+  padding-top: 63px;
+  padding-right: 50px;
+  padding-bottom: 41px;
+}
+@media (max-width: 575px) {
+  .courses-section .course-intro {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.courses-section .course-intro-potrait {
+  padding-left: 34px;
+  padding-right: 32px;
+  padding-top: 56px;
+  padding-bottom: 51px;
+}
+.courses-section .course-tag span {
+  display: block;
+  padding-left: 21px;
+  padding-right: 21px;
+  line-height: 31px;
+  color: var(--tertiary-color);
+  font-weight: 400;
+  width: fit-content;
+  height: 31px;
+  background: var(--dark-to-main-color);
+}
+.courses-section .course-thumb img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* theme-4 end */
 /* ----------------------------
      27. =course detail page 
      ------------------------------ */
+/* theme course-detail-3 start */
 .overlay-dark {
   position: relative;
 }
@@ -1791,6 +1844,24 @@ textarea.form-control {
   left: -15px;
   top: 10px;
 }
+/* theme course-detail-3 end */
+/* theme course-detail-4 start */
+#register-modal {
+  top: 0;
+  bottom: 0;
+  border-radius: 0;
+}
+#register-modal .modal-content {
+  border-radius: 0;
+  padding: 30px;
+  border: 0;
+}
+@media (max-width: 767px) {
+  #register-modal .modal-content {
+    padding: 20px;
+  }
+}
+/* theme course-detail-4 end */
 /* ----------------------------
      28. =blog page 
      ------------------------------ */

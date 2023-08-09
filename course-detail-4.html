@@ -301,18 +301,14 @@
                   <br />
                   <span class="fs-5 fw-bolder">Rp X.XXX.XXX</span>
                 </div>
-                <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
-                  <li class="nav-item w-100" role="presentation">
-                    <button
-                      type="button"
-                      class="btn btn-primary w-100"
-                      data-bs-toggle="modal"
-                      data-bs-target="#register-modal"
-                    >
-                      Daftar Sekarang
-                    </button>
-                  </li>
-                </ul>
+                <button
+                  type="button"
+                  class="btn btn-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#register-modal"
+                >
+                  Daftar Sekarang
+                </button>
               </div>
               <div class="schedule-section box">
                 <h4 class="course-title text-capitalize text-center">
@@ -562,20 +558,14 @@
                   <br />
                   <span class="fs-5 fw-bolder">Rp X.XXX.XXX</span>
                 </div>
-                <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
-                  <li class="nav-item w-100" role="presentation">
-                    <a
-                      href="#nav-form"
-                      class="btn btn-primary w-100"
-                      data-bs-toggle="tab"
-                      type="button"
-                      role="tab"
-                      aria-controls="nav-form"
-                    >
-                      Daftar Sekarang
-                    </a>
-                  </li>
-                </ul>
+                <button
+                  type="button"
+                  class="btn btn-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#register-modal"
+                >
+                  Daftar Sekarang
+                </button>
               </div>
             </div>
           </div>
@@ -714,52 +704,139 @@
 
     <!-- register modal start -->
     <div
-      id="register-modal"
       class="modal fade"
+      id="register-modal"
       tabindex="-1"
-      aria-labelledby="registerModal"
+      aria-labelledby="registerOptionModal"
       aria-hidden="true"
     >
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
-            Formulir Registrasi Training
-          </h1>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="modal-body">
-          <a
-            href="kemnaker-3.html"
-            type="button"
-            class="btn btn-primary w-100 mb-2"
-            >Pendaftaran Sertifikasi Kemnaker RI</a
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="form-register">Formulir Registrasi</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="alert alert-success alert-dismissible fade show d-none send-alert"
+            role="alert"
           >
-          <a href="bnsp-3.html" type="button" class="btn btn-primary w-100 mb-2"
-            >Pendaftaran Sertifikasi BNSP</a
-          >
-          <a
-            href="softskill-3.html"
-            type="button"
-            class="btn btn-primary w-100 mb-2"
-            >Pendaftaran Training Softskill</a
-          >
-          <a
-            href="public-3.html"
-            type="button"
-            class="btn btn-primary w-100 mb-2"
-            >Pendaftaran Public Training</a
-          >
-          <a
-            href="inhouse-3.html"
-            type="button"
-            class="btn btn-primary w-100 mb-2"
-            >Pendaftaran Inhouse Training</a
-          >
+            <strong>Terimakasih sudah mendaftar!</strong> Data diri anda sudah
+            kami terima. Admin kami akan menghubungi anda segera.
+          </div>
+          <form name="register-form-f" method="post">
+            <div class="modal-body">
+              <div class="form-group mb-3">
+                <label for="name" class="form-label"
+                  >Nama <span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="nama"
+                  required=""
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="email" class="form-label"
+                  >Alamat Email <span class="text-danger">*</span></label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="nama@mail.com"
+                  name="email"
+                  required=""
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="phone" class="form-label">
+                  Nomor Telepon (Whatsapp)
+                  <span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  name="telepon"
+                  required=""
+                />
+              </div>
+              <div class="d-md-flex pt-2 pb-2 mb-2">
+                <div class="company w-100">
+                  <label for="company" class="form-label"
+                    >Asal Perusahaan</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="company"
+                    name="company"
+                    value=""
+                    placeholder="Khusus bagi yang sedang bekerja"
+                  />
+                </div>
+              </div>
+              <div class="mb-2">
+                <label for="company_address" class="form-label"
+                  >Alamat Perusahaan</label
+                >
+                <textarea
+                  class="form-control"
+                  id="company_address"
+                  name="company_address"
+                  value=""
+                  placeholder="Khusus bagi yang sedang bekerja"
+                ></textarea>
+              </div>
+              <div class="form-group mb-3">
+                <label for="jadwal" class="form-label">Program Training</label>
+                <select
+                  class="form-select"
+                  aria-label="select-jadwal"
+                  name="jadwal"
+                  required=""
+                >
+                  <option
+                    selected=""
+                    value="Pelaporan dan Permintaan Informasi Debitur Melalui Sistem Layanan Informasi Keuangan"
+                  >
+                    Pelaporan dan Permintaan Informasi Debitur Melalui Sistem
+                    Layanan Informasi Keuangan
+                  </option>
+                </select>
+              </div>
+            </div>
+            <!-- <input type="hidden" name="_next" value="index.html" /> -->
+            <div class="modal-footer">
+              <button type="reset" class="btn btn-danger">Reset</button>
+              <button
+                type="submit"
+                class="btn btn-primary btn-send"
+                name="send"
+              >
+                Kirim
+              </button>
+              <button
+                class="btn btn-primary btn-loading d-none"
+                type="button"
+                disabled=""
+              >
+                <span
+                  class="spinner-border spinner-border-sm"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+                Loading...
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>

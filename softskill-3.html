@@ -300,6 +300,117 @@
                     class="mb-2"
                     enctype="multipart/form-data"
                   >
+                    <input
+                      type="hidden"
+                      name="_token"
+                      value="QOco2vJ3YasLpwC8lVUvMX1yUo8YEA5ao3xIZDny"
+                    />
+                    <div class="d-md-flex pt-2 pb-2 mb-2">
+                      <div class="name w-100 mb-2 mb-md-0">
+                        <label for="name" class="form-label"
+                          >Nama <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          name="name"
+                          required=""
+                          value=""
+                        />
+                      </div>
+                      <div class="mb-3" hidden="">
+                        <input
+                          type="text"
+                          placeholder="Slug"
+                          class="form-control"
+                          id="slug"
+                          name="slug"
+                          required=""
+                          value=""
+                        />
+                      </div>
+                    </div>
+                    <div class="d-md-flex pt-2 pb-2 mb-2">
+                      <div class="email w-100 mb-2 mb-md-0">
+                        <label for="email" class="form-label">
+                          Alamat Email <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="email"
+                          name="email"
+                          required=""
+                          value=""
+                        />
+                      </div>
+                      <div class="phone w-100">
+                        <label for="phone" class="form-label"
+                          >Nomor Telepon (Whatsapp)
+                          <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="phone"
+                          name="phone"
+                          required=""
+                          value=""
+                        />
+                      </div>
+                    </div>
+                    <div class="d-md-flex pt-2 pb-2 mb-2">
+                      <div class="company w-100">
+                        <label for="company" class="form-label"
+                          >Asal Perusahaan</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="company"
+                          name="company"
+                          value=""
+                          placeholder="Khusus bagi yang sedang bekerja"
+                        />
+                      </div>
+                    </div>
+                    <div class="mb-2">
+                      <label for="company_address" class="form-label"
+                        >Alamat Perusahaan</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="company_address"
+                        name="company_address"
+                        value=""
+                        placeholder="Khusus bagi yang sedang bekerja"
+                      ></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <label for="program" class="form-label"
+                        >Program Training Softskill yang dipilih
+                        <span class="text-danger">*</span></label
+                      >
+                      <select class="form-select" name="program_id">
+                        <option value="3">
+                          Pelaporan dan Permintaan Informasi Debitur Melalui
+                          Sistem Layanan Informasi Keuangan
+                        </option>
+                      </select>
+                    </div>
+                    <div class="d-flex">
+                      <button type="submit" class="btn btn-primary py-3 px-5">
+                        <i class="ri-save-3-line me-1"></i>Daftar
+                      </button>
+                    </div>
+                  </form>
+                  <!-- <form
+                    method="post"
+                    action="/pendaftaran-bnsp"
+                    class="mb-2"
+                    enctype="multipart/form-data"
+                  >
                     <div class="pt-2 pb-2 mb-2 subtitle">
                       <h4 class="text-capitalize mb-2">Data Materi Training</h4>
                     </div>
@@ -479,7 +590,7 @@
                         <i class="ri-save-3-line me-1"></i>Daftar
                       </button>
                     </div>
-                  </form>
+                  </form> -->
                 </div>
               </div>
             </div>
