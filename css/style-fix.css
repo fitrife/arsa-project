@@ -144,6 +144,7 @@ h5 {
 }
 p {
   line-height: 1.9;
+  text-align: justify;
 }
 span {
   line-height: 1.9;
@@ -408,6 +409,10 @@ img {
 
 .bg-gray {
   background: #cfcbec;
+}
+
+.bg-light {
+  background: #eee !important;
 }
 
 /* ------------------------------
@@ -1846,6 +1851,10 @@ textarea.form-control {
 }
 /* theme course-detail-3 end */
 /* theme course-detail-4 start */
+.course-detail.course-bg {
+  background-image: url("../img/abstract-3.jpg");
+  background-size: cover;
+}
 #register-modal {
   top: 0;
   bottom: 0;
@@ -2017,4 +2026,19 @@ textarea.form-control {
   color: #000000;
   border: 1px solid #ccc;
   font-size: 11px;
+}
+/* ----------------------------
+     28. =register page 
+     ------------------------------ */
+.registration {
+  background-image: url("../img/abstract-3.jpg");
+  background-size: cover;
+}
+@media (min-width: 1200px) {
+  .form-applicant .title h3.fs-1 {
+    font-size: 2.6rem !important;
+  }
+}
+.form-applicant .title p {
+  font-size: large;
 }
