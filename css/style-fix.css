@@ -1591,7 +1591,10 @@ textarea.form-control {
   background: var(--main-color);
   color: var(--white);
 }
-.course-section .course-box.box.course-item {
+.course-section .owl-carousel .owl-stage {
+  display: flex;
+}
+.course-section .owl-carousel .owl-stage .owl-item {
   box-shadow: var(--shadow-black-100);
   margin: 5px;
   padding: 15px;
@@ -1601,6 +1604,16 @@ textarea.form-control {
   overflow: hidden;
   background-color: #ffffff;
 }
+/* .course-section .course-box.box.course-item {
+  box-shadow: var(--shadow-black-100);
+  margin: 5px;
+  padding: 15px;
+  border-radius: 0;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-color: #ffffff;
+} */
 .course-section .owl-carousel .owl-nav span {
   font-size: 32px;
   font-weight: 900;
