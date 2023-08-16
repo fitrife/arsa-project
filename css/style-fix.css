@@ -882,6 +882,12 @@ textarea.form-control {
 /* ----------------------------
      17. =header
      ------------------------------ */
+@media (max-width: 991px) {
+  .navbar-toggler,
+  .navbar-toggler i {
+    color: var(--main-color) !important;
+  }
+}
 .top-bar {
   padding: 8px 0;
   background: var(--tertiary-color);
@@ -1278,7 +1284,6 @@ textarea.form-control {
     padding-right: 0;
     padding-top: 0.9rem;
     padding-bottom: 0.9rem;
-    color: rgba(255, 255, 255, 0.7);
   }
   .navbar-dark .navbar-nav > .nav-item > .nav-link:hover {
     color: #fff;

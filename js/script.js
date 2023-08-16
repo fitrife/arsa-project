@@ -309,10 +309,6 @@ $(".course-carousel").owlCarousel({
       items: 1,
       //   nav: true,
     },
-    600: {
-      items: 2,
-      //   nav: true,
-    },
     1000: {
       items: 2,
       //   nav: true,
@@ -332,10 +328,6 @@ $(".schedule-carousel").owlCarousel({
   responsive: {
     0: {
       items: 1,
-      //   nav: true,
-    },
-    600: {
-      items: 2,
       //   nav: true,
     },
     1000: {
