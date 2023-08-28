@@ -1837,6 +1837,7 @@ textarea.form-control {
 @media (max-width: 575px) {
   .page-title-section {
     padding: 70px 0 30px;
+    background-attachment: local;
   }
 }
 .page-title-section .overlay {
@@ -1849,7 +1850,11 @@ textarea.form-control {
   opacity: 0.4;
   background: #000000;
 }
-
+@media (max-width: 575px) {
+  .page-title-section .overlay {
+    opacity: 0.6;
+  }
+}
 /* ----------------------------
      26. =course page 
      ------------------------------ */
