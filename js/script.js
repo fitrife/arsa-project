@@ -330,8 +330,12 @@ $(".schedule-carousel").owlCarousel({
       items: 1,
       //   nav: true,
     },
-    1000: {
+    600: {
       items: 2,
+      //   nav: true,
+    },
+    1000: {
+      items: 3,
       //   nav: true,
     },
   },
